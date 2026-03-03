@@ -1,32 +1,32 @@
 import { create } from "zustand";
 import { immer } from "zustand/middleware/immer";
-import { Draft } from "immer";
-import { initialLoading, LoadingState } from "./store/loading";
 import {
   initialProfile,
   profileActions,
-  ProfileActions,
-  ProfileState,
+  type ProfileActions,
+  type ProfileState,
 } from "./store/profile";
 import {
   initialNotification,
-  NotificationActions,
   notificationActions,
-  NotificationState,
+  type NotificationActions,
+  type NotificationState,
 } from "./store/notification";
-import { CartActions, cartActions, CartState, initialCart } from "./store/cart";
 import {
   initialProducts,
-  ProductsActions,
+  type ProductsActions,
   productsActions,
-  ProductsState,
+  type ProductsState,
 } from "./store/product";
 import {
   initialRoutine,
   routineActions,
-  RoutineActions,
-  RoutineState,
+  type RoutineActions,
+  type RoutineState,
 } from "./store/routine";
+import { cartActions, initialCart, type CartActions, type CartState } from "./store/cart";
+import type { Draft } from "immer";
+import { initialLoading, type LoadingState } from "./store/loading";
 
 export interface State {
   loading: LoadingState;

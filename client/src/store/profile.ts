@@ -1,5 +1,5 @@
+import type { NavigateFunction } from "react-router-dom";
 import type { StoreGet, StoreSet } from "../store";
-import { NavigateFunction } from "react-router-dom";
 import { apiClient, apiEndpoints } from "./utils.api";
 
 export interface UserProfile {
