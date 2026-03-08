@@ -43,7 +43,7 @@ const Register = () => {
     }),
     onSubmit: async (values) => {
       await onRegister(values);
-      if (error === false) {
+      if (error === 'false') {
         navigate("/login");
       }
     },

@@ -14,7 +14,6 @@ const Home: React.FC = () => {
   const token = useStore((state) => state.profile.user?.token);
   return (
     <>
-
       <div className="home-page">
         <Hero />
         <div className="section-container">
@@ -27,8 +26,6 @@ const Home: React.FC = () => {
           {/* <HomeBlog /> */}
         </div>
       </div>
-
-
     </>
   );
 };

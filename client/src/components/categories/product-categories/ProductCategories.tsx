@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { use, useEffect, useState } from "react";
 
 import "./ProductCategories.scss";
 import { useNavigate } from "react-router-dom";
@@ -14,7 +14,7 @@ import {
   Grid,
   Typography,
 } from "@mui/material";
-import  { BrandAPI } from "../../../store/apiBrand";
+import { useStore } from "../../../store";
 
 const DEFAULT_BRAND_LOGO =
   "https://placehold.co/200x200/f5f5f5/969696?text=No+Logo";
@@ -24,28 +24,13 @@ const FALLBACK_LOGO =
 const ProductCategories: React.FC = () => {
   const navigate = useNavigate();
 
-  const [brands, setBrands] = useState<any[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
 
+  const fetchBrands =  useStore((state) => state.fetchBrands);
   useEffect(() => {
     fetchBrands();
   }, []);
-
-  const fetchBrands = async () => {
-    try {
-      setLoading(true);
-      setError(null);
-      const brandsData = await BrandAPI.getAll();
-      console.log("brandsData",brandsData);
-      setBrands(brandsData);
-    } catch (err) {
-      setError("Failed to load brands. Please try again later.");
-    } finally {
-      setLoading(false);
-    }
-  };
-
+  const brands = useStore((state) => state.brands.brands);
+  const loading = useStore((state) => state.loading.isLoading);
   const handleClick = () => {
     navigate("/brands");
   };
@@ -63,15 +48,15 @@ const ProductCategories: React.FC = () => {
     );
   }
 
-  if (error) {
-    return (
-      <Container maxWidth="lg" sx={{ py: 4 }}>
-        <Alert severity="error" sx={{ mb: 2 }}>
-          {error}
-        </Alert>
-      </Container>
-    );
-  }
+  // if (error) {
+  //   return (
+  //     <Container maxWidth="lg" sx={{ py: 4 }}>
+  //       <Alert severity="error" sx={{ mb: 2 }}>
+  //         {error}
+  //       </Alert>
+  //     </Container>
+  //   );
+  // }
 
   return (
     <div className="product-categories-container">
@@ -79,7 +64,7 @@ const ProductCategories: React.FC = () => {
 
       <Grid container spacing={2} justifyContent="center" sx={{ mb: 4 }}>
         {brands.map((brand) => (
-          <Grid item key={brand.brandId} xs={6} sm={4} md={3} lg={2}>
+          <Grid key={brand.brandId} size={{ xs: 6, sm: 4, md: 3, lg: 2 }}>
             <Card
               sx={{
                 border: "1px solid #ccc",

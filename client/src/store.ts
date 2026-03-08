@@ -27,13 +27,17 @@ import {
 import { cartActions, initialCart, type CartActions, type CartState } from "./store/cart";
 import type { Draft } from "immer";
 import { initialLoading, type LoadingState } from "./store/loading";
+import { brandsActions, initialBrands, type BrandsActions, type BrandsState } from "./store/brand";
+import { initialOrder, orderActions, type OrderActions, type OrderState } from "./store/order";
 
 export interface State {
   loading: LoadingState;
+  brands : BrandsState;
   notification: NotificationState;
   profile: ProfileState;
   products: ProductsState;
   cart: CartState;
+  order: OrderState;
   routine: RoutineState;
 }
 
@@ -41,7 +45,9 @@ export type Actions = ProfileActions &
   NotificationActions &
   ProductsActions &
   CartActions &
-  RoutineActions;
+  RoutineActions &
+  BrandsActions &
+  OrderActions;
 
 export type Store = State & Actions;
 export type StoreGet = () => Store;
@@ -60,5 +66,9 @@ export const useStore = create<Store, [["zustand/immer", never]]>(
     cart: initialCart,
     ...routineActions(set, get),
     routine: initialRoutine,
+    ...brandsActions(set, get),
+    brands: initialBrands,
+    order: initialOrder,
+    ...orderActions(set, get),
   }))
 );
