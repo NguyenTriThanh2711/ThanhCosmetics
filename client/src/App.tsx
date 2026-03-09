@@ -21,9 +21,6 @@ import SaleProducts from "./pages/sale/SaleProducts";
 import Login from "./pages/login/Login";
 import SkinTestQuiz from "./pages/quiz/SkinTestQuiz";
 import SkinTestResult from "./pages/skin-test-result/SkinTestResult";
-import BlogDetail from "./pages/blog/BlogDetail";
-import OurBlog from "./pages/blog/OurBlog";
-import Compare from "./pages/compare/Compare";
 import Register from "./pages/register/Register";
 
 function App() {
@@ -61,12 +58,10 @@ function App() {
         },
         { path: "product/:id", element: <ProductDetail /> },
         { path: "sales", element: <SaleProducts /> },
-        { path: "blogs", element: <OurBlog /> },
-        { path: "blogs/:id", element: <BlogDetail /> },
         { path: "brands", element: <BrandList /> },
         { path: "purchase", element: <Purchase /> },
         { path: "purchase/:id", element: <PurchaseDetail /> },
-        { path: "compare", element: <Compare /> },
+        // { path: "compare", element: <Compare /> },
         {
           path: "cart",
           element: (

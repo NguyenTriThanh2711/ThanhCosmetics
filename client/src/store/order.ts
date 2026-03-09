@@ -8,7 +8,7 @@ export interface OrderState {
 }
 export interface OrderActions {
   fetchUserOrders: () => Promise<void>;
-  fetchPurchaseDetails: (orderId: number) => Promise<void>;
+  fetchPurchaseDetails: (orderId: string) => Promise<void>;
 }
 
 export const initialOrder: OrderState = {
@@ -117,20 +117,20 @@ export function orderActions(set: StoreSet, get: StoreGet): OrderActions {
       }
     },
 
-    fetchPurchaseDetail: async (orderId: string) => {
+    fetchPurchaseDetails: async (orderId: string) => {
       set((state) => {
         state.loading.isLoading = true;
       });
 
       try {
-        const url = `${apiEndpoints.Order}/get_order_by_id?orderId=${orderId}`;
+        const url = `${apiEndpoints.Orders}/get_order_by_id?orderId=${orderId}`;
 
         const response = await apiClient.get(url);
 
         const detail = mapApiToPurchaseDetail(response.data);
 
         set((state) => {
-          state.orders.purchaseDetail = detail;
+          state.order.purchaseDetails = detail;
         });
       } catch (error: any) {
         set((state) => {

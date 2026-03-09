@@ -29,6 +29,9 @@ import type { Draft } from "immer";
 import { initialLoading, type LoadingState } from "./store/loading";
 import { brandsActions, initialBrands, type BrandsActions, type BrandsState } from "./store/brand";
 import { initialOrder, orderActions, type OrderActions, type OrderState } from "./store/order";
+import { initialVoucher, voucherActions, type VoucherActions, type VouchersState } from "./store/voucher";
+import { initialPayment, paymentActions, type PaymentActions, type PaymentState } from "./store/payment";
+import { filterActions, initialFilter, type FilterActions, type FilterState } from "./store/filterActions";
 
 export interface State {
   loading: LoadingState;
@@ -36,9 +39,12 @@ export interface State {
   notification: NotificationState;
   profile: ProfileState;
   products: ProductsState;
+  voucher: VouchersState;
   cart: CartState;
   order: OrderState;
   routine: RoutineState;
+  payment: PaymentState;
+  filter: FilterState;
 }
 
 export type Actions = ProfileActions &
@@ -47,7 +53,10 @@ export type Actions = ProfileActions &
   CartActions &
   RoutineActions &
   BrandsActions &
-  OrderActions;
+  VoucherActions &
+  OrderActions &
+  PaymentActions &
+  FilterActions;
 
 export type Store = State & Actions;
 export type StoreGet = () => Store;
@@ -70,5 +79,11 @@ export const useStore = create<Store, [["zustand/immer", never]]>(
     brands: initialBrands,
     order: initialOrder,
     ...orderActions(set, get),
+    voucher: initialVoucher,
+    ...voucherActions(set, get),
+    payment: initialPayment,
+    ...paymentActions(set, get),
+    filter: initialFilter,
+    ...filterActions(set, get),
   }))
 );

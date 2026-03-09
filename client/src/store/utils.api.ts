@@ -17,6 +17,8 @@ export const apiEndpoints = {
   Authentication: "Authentication",
   blogs: "blogs",
   Brand: "Brand",
+  Function: "Function",
+  Ingredient: "Ingredient",
 } as const;
 
 export const apiClient: AxiosInstance = axios.create({

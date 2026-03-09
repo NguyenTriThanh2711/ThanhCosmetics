@@ -92,8 +92,8 @@ export function cartActions(set: StoreSet, get: StoreGet): CartActions {
       });
       try {
         const url = voucher && voucher > 0
-          ? `/${apiEndpoints.Order}/create-order?voucherId=${voucher}`
-          : `/${apiEndpoints.Order}/create-order`;
+          ? `/${apiEndpoints.Orders}/create-order?voucherId=${voucher}`
+          : `/${apiEndpoints.Orders}/create-order`;
 
         const response = await apiClient.post(url, body, {
           headers: { Authorization: `Bearer ${token}` },
@@ -117,7 +117,7 @@ export function cartActions(set: StoreSet, get: StoreGet): CartActions {
     },
     getShippingPrice: async (body, inRegion, token) => {
       try {
-        const url = `/${apiEndpoints.Order}/get_shipping_price?inRegion=${inRegion}`;
+        const url = `/${apiEndpoints.Orders}/get_shipping_price?inRegion=${inRegion}`;
         const response = await apiClient.post(url, body, {
           headers: { Authorization: `Bearer ${token}` },
         });

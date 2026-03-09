@@ -1,3 +1,4 @@
+import type ProductDetail from "../pages/product/ProductDetail";
 import type { StoreGet, StoreSet } from "../store";
 import { apiClient, apiEndpoints } from "./utils.api";
 export interface Brand {
@@ -40,18 +41,18 @@ export interface ProductsState {
   products: Product[];
   bestSellersProducts: Product[];
   newInProducts: Product[];
-  productDetail: Product | null;
+  productDetail: ProductDetail | null;
 }
 
 export interface ProductsActions {
   fetchProducts: () => Promise<void>;
-  fetchProductDetail: (productId: number) => Promise<void>;
+  fetchProductDetail: (productId: string) => Promise<void>;
   fetchBestSellersProducts: () => Promise<void>;
   fetchNewInProducts: () => Promise<void>;
   createProduct: (data: any) => Promise<void>;
-  updateProduct: (productId: number, data: any) => Promise<void>;
-  activateProduct: (productId: number) => Promise<void>;
-  deactivateProduct: (productId: number) => Promise<void>;
+  updateProduct: (productId: string, data: any) => Promise<void>;
+  activateProduct: (productId: string) => Promise<void>;
+  deactivateProduct: (productId: string) => Promise<void>;
 }
 export const initialProducts: ProductsState = {
   products: [],
@@ -143,7 +144,7 @@ export function productsActions(set: StoreSet, get: StoreGet): ProductsActions {
         });
       }
     },
-    fetchProductDetail: async (productId : number) => {
+    fetchProductDetail: async (productId : string) => {
       set((state) => {
         state.loading.isLoading = true;
       });
@@ -199,7 +200,7 @@ export function productsActions(set: StoreSet, get: StoreGet): ProductsActions {
         });
       }
     },
-    updateProduct: async (productId: number, data: any) => {
+    updateProduct: async (productId: string, data: any) => {
       set((state) => {
         state.loading.isLoading = true;
       });
@@ -232,7 +233,7 @@ export function productsActions(set: StoreSet, get: StoreGet): ProductsActions {
         });
       }
     },
-    activateProduct: async (productId: number) => {
+    activateProduct: async (productId: string) => {
       set((state) => {
         state.loading.isLoading = true;
       });
@@ -265,7 +266,7 @@ export function productsActions(set: StoreSet, get: StoreGet): ProductsActions {
         });
       }
     },
-    deactivateProduct: async (productId: number) => {
+    deactivateProduct: async (productId: string) => {
       set((state) => {
         state.loading.isLoading = true;
       });

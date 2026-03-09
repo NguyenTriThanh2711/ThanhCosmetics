@@ -18,6 +18,7 @@ import RemoveIcon from "@mui/icons-material/Remove";
 import { useStore } from "../../store";
 
 import "./Cart.scss";
+import type { Product } from "../../store/product";
 
 const Cart = () => {
   const navigate = useNavigate();
@@ -43,20 +44,20 @@ const Cart = () => {
     },
   });
 
-  const updateQuantity = (index, newQuantity) => {
+  const updateQuantity = (index: number, newQuantity: number) => {
     if (newQuantity < 1) return;
     formik.setFieldValue(`products[${index}].quantity`, newQuantity);
     onUpdateQuantity(cart[index].productId, newQuantity);
   };
 
-  const removeProduct = (index) => {
-    const newProducts = formik.values.products.filter((_, i) => i !== index);
+  const removeProduct = (index: number) => {
+    const newProducts = formik.values.products.filter((_: Product, i: number) => i !== index);
     formik.setFieldValue("products", newProducts);
     onRemoveItem(cart[index].productId);
   };
 
   const totalPrice = formik.values.products.reduce(
-    (sum, product) => sum + product.price * product.quantity,
+    (sum: number, product: Product) => sum + product.price * product.quantity,
     0
   );
 
@@ -85,7 +86,7 @@ const Cart = () => {
             height: "calc(100vh - 348px)",
           }}
         >
-          {formik.values.products.map((product, index) => (
+          {formik.values.products.map((product : Product, index: number) => (
             <Card
               key={index}
               sx={{

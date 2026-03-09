@@ -4,7 +4,7 @@ import "./Review.css";
 import { createFeedback } from "../../store/feedback.api";
 import { useStore } from "../../store";
 
-export default function Review({ isOpen, onClose, detail }) {
+export default function Review({ isOpen, onClose, detail }:any) {
   const [rating, setRating] = useState(0.0);
   const [hoverRating, setHoverRating] = useState(0.0); // Trạng thái khi hover
   const [comment, setComment] = useState(
@@ -14,11 +14,11 @@ export default function Review({ isOpen, onClose, detail }) {
   //   (state) => state.profile.user && state.profile.user.token
   // );
   const token = localStorage.getItem("token");
-  const handleStarClick = (value) => {
+  const handleStarClick = (value:any) => {
     setRating(value);
   };
 
-  const handleMouseMove = (event, index) => {
+  const handleMouseMove = (event:any, index:any) => {
     const rect = event.target.getBoundingClientRect();
     const offsetX = event.clientX - rect.left;
     const percent = offsetX / rect.width;
@@ -26,7 +26,7 @@ export default function Review({ isOpen, onClose, detail }) {
     setHoverRating(parseFloat(newRating.toFixed(1))); // Làm tròn đến 1 chữ số thập phân
   };
 
-  const getRatingText = (rating) => {
+  const getRatingText = (rating:any) => {
     if (rating >= 4.5) return "Excellent";
     if (rating >= 3.5) return "Very Good";
     if (rating >= 2.5) return "Good";

@@ -88,12 +88,12 @@ const Footer: React.FC = () => {
         <div className="location-info">
           <div>
             <img src="/icons/location-ico.svg" alt="" />
-            <p>Dr. Richardson, California</p>
+            <p>Dr. Thanh, VietNam</p>
           </div>
           |
           <div>
             <img src="/icons/call-icon.svg" alt="" />
-            <p>1-802-526-2463</p>
+            <p>84-899-353-935</p>
           </div>
         </div>
 
@@ -107,7 +107,7 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="copyright">
-        <p>© 2023 Beautya. All Rights Reserved.</p>
+        <p>© 2026 BeautySC. All Rights Reserved.</p>
 
         <div>
           <p>Terms & Conditions</p>
