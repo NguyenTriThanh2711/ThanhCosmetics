@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: beautysc-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: beautysc
+      MYSQL_USER: beautysc_user
+      MYSQL_PASSWORD: beautysc_pass
+      MYSQL_ROOT_PASSWORD: root_pass
+      TZ: Asia/Ho_Chi_Minh
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    command: >
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_unicode_ci
+
+volumes:
+  mysql_data:
