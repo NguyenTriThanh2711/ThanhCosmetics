@@ -1,0 +1,15 @@
+E:\ThanhCosmetics\server\dotnet\ThanhCometics.Data\obj\Debug\net8.0\ThanhCometics.Repository.csproj.AssemblyReference.cache
+E:\ThanhCosmetics\server\dotnet\ThanhCometics.Data\obj\Debug\net8.0\ThanhCometics.Repository.GeneratedMSBuildEditorConfig.editorconfig
+E:\ThanhCosmetics\server\dotnet\ThanhCometics.Data\obj\Debug\net8.0\ThanhCometics.Repository.AssemblyInfoInputs.cache
+E:\ThanhCosmetics\server\dotnet\ThanhCometics.Data\obj\Debug\net8.0\ThanhCometics.Repository.AssemblyInfo.cs
+E:\ThanhCosmetics\server\dotnet\ThanhCometics.Data\obj\Debug\net8.0\ThanhCometics.Repository.csproj.CoreCompileInputs.cache
+E:\ThanhCosmetics\server\dotnet\ThanhCometics.Data\obj\Debug\net8.0\ThanhCometics.Repository.sourcelink.json
+E:\ThanhCosmetics\server\dotnet\ThanhCometics.Data\bin\Debug\net8.0\ThanhCometics.Repository.deps.json
+E:\ThanhCosmetics\server\dotnet\ThanhCometics.Data\bin\Debug\net8.0\ThanhCometics.Repository.runtimeconfig.json
+E:\ThanhCosmetics\server\dotnet\ThanhCometics.Data\bin\Debug\net8.0\ThanhCometics.Repository.dll
+E:\ThanhCosmetics\server\dotnet\ThanhCometics.Data\bin\Debug\net8.0\ThanhCometics.Repository.pdb
+E:\ThanhCosmetics\server\dotnet\ThanhCometics.Data\obj\Debug\net8.0\ThanhCometics.Repository.dll
+E:\ThanhCosmetics\server\dotnet\ThanhCometics.Data\obj\Debug\net8.0\refint\ThanhCometics.Repository.dll
+E:\ThanhCosmetics\server\dotnet\ThanhCometics.Data\obj\Debug\net8.0\ThanhCometics.Repository.pdb
+E:\ThanhCosmetics\server\dotnet\ThanhCometics.Data\obj\Debug\net8.0\ThanhCometics.Repository.genruntimeconfig.cache
+E:\ThanhCosmetics\server\dotnet\ThanhCometics.Data\obj\Debug\net8.0\ref\ThanhCometics.Repository.dll

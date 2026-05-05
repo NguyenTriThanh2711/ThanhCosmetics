@@ -1,0 +1,159 @@
+🚀 PHASE 1 — Core Foundation (Bắt buộc phải có)
+
+👉 Mục tiêu: hệ thống chạy được + login + CRUD cơ bản
+
+🔹 Backend Core
+Setup project (API + Service + Data)
+Config:
+MySQL connection
+JWT auth
+Swagger
+🔹 Module cần làm
+Authentication
+Login / Register
+JWT + Refresh Token
+Hash password (BCrypt)
+User / Customer
+CRUD profile
+Role: Admin / Customer
+Category
+CRUD
+Product
+CRUD
+Relation với Category + Brand
+
+👉 Kết quả phase này:
+
+Có thể login
+Có thể quản lý sản phẩm
+Có API hoàn chỉnh cơ bản
+🛒 PHASE 2 — Shopping Flow (Core Business)
+
+👉 Mục tiêu: user mua được hàng
+
+🔹 Module
+Cart (nếu chưa có thì nên thêm)
+Add/remove/update item
+Order
+Create order
+Order detail
+Shipping Address
+CRUD địa chỉ
+Transaction (basic)
+Lưu trạng thái thanh toán
+
+👉 Flow hoàn chỉnh:
+
+User → Add to cart → Create order → Lưu DB
+
+👉 Kết quả:
+
+Có luồng mua hàng end-to-end (chưa cần thanh toán thật)
+💳 PHASE 3 — Payment Integration (VNPay)
+
+👉 Mục tiêu: thanh toán thật
+
+🔹 Module
+PaymentController
+VNPay integration
+🔹 Làm:
+Tạo payment URL
+Handle callback /payments/return
+Update:
+Order status
+Transaction status
+
+👉 Lưu ý:
+
+Phase này hay lỗi nhất (hash + return URL)
+
+👉 Kết quả:
+
+Thanh toán hoạt động (sandbox)
+🎯 PHASE 4 — Business Enhancements
+
+👉 Mục tiêu: tăng giá trị hệ thống
+
+🔹 Module
+Voucher
+Apply discount
+Validate voucher
+Feedback / Review
+User đánh giá sản phẩm
+Blog
+Content marketing
+Brand
+Quản lý thương hiệu
+
+👉 Kết quả:
+
+Hệ thống giống e-commerce thật hơn
+🧴 PHASE 5 — Skincare Intelligence (Điểm khác biệt)
+
+👉 Mục tiêu: feature "đặc sản" của đồ án
+
+🔹 Module
+Skin Type Quiz
+Questions / Answers
+Submit → trả kết quả
+Ingredient
+Product Function
+
+👉 Có thể nâng cấp:
+
+Recommend sản phẩm theo loại da
+
+👉 Kết quả:
+
+Có yếu tố AI-lite / personalization
+⚡ PHASE 6 — Optimization & Scaling
+
+👉 Mục tiêu: giống production
+
+🔹 Làm:
+Cache (In-memory / Redis)
+Logging
+Exception handling global
+Pagination / filtering
+API response chuẩn (MethodResult)
+🔐 PHASE 7 — Security & Production Ready
+
+👉 Mục tiêu: deploy được
+
+🔹 Làm:
+Role-based authorization (Admin/Staff/User)
+Validate input (FluentValidation nếu có)
+Rate limiting (optional)
+Config:
+appsettings.Production.json
+🐳 PHASE 8 — DevOps & Deployment
+
+👉 Mục tiêu: chạy thật
+
+🔹 Làm:
+Dockerize
+Deploy:
+VPS / Azure / Render
+CI/CD (nếu có)
+🎯 Tổng timeline gợi ý (chuẩn đồ án)
+Phase	Thời gian	Độ quan trọng
+Phase 1	2–3 ngày	🔥🔥🔥
+Phase 2	3–5 ngày	🔥🔥🔥
+Phase 3	2–3 ngày	🔥🔥
+Phase 4	3–4 ngày	🔥🔥
+Phase 5	3–5 ngày	🔥🔥🔥 (điểm đồ án)
+Phase 6–8	3–5 ngày	🔥
+⚠️ Insight quan trọng (thực tế đi làm)
+Đừng làm Skin Quiz trước → không ai quan tâm nếu chưa mua được hàng
+Payment làm sau → vì dễ lỗi
+Phase 1 + 2 = 70% giá trị project
+👍 Gợi ý thêm (nâng điểm mạnh)
+
+Bạn có thể thêm:
+
+Recommendation API:
+
+GET /api/products/recommend?skinType=Oily
+Tracking:
+Best seller
+Recently viewed
