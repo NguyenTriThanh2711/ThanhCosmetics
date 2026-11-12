@@ -11,7 +11,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 // regiter db context after create entity
-builder.Services.AddDbContext<ThanhCometicsDBContext>(options =>options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))); var app = builder.Build();
+builder.Services.AddDbContext<ThanhCometicsDBContext>(options =>options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ThanhCometics.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63b00ec04a13b30660e58264e5e1ccb02d417a74")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79e20cb8eb11bc6aff2f5d157bbd0ff8a43c6d3d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ThanhCometics.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ThanhCometics.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

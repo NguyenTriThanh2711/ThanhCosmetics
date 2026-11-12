@@ -1744,6 +1744,16 @@
           }
         }
       },
+      "ThanhCometics.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/ThanhCometics.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ThanhCometics.Common.dll": {}
+        }
+      },
       "ThanhCometics.Repository/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -1765,7 +1775,7 @@
         "dependencies": {
           "Pomelo.EntityFrameworkCore.MySql": "9.0.0",
           "System.Diagnostics.Tools": "4.3.0",
-          "ThanhCometics.Repository": "1.0.0"
+          "ThanhCometics.Common": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ThanhCometics.Service.dll": {}
@@ -5394,6 +5404,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "ThanhCometics.Common/1.0.0": {
+      "type": "project",
+      "path": "../ThanhCosmetics.Common/ThanhCometics.Common.csproj",
+      "msbuildProject": "../ThanhCosmetics.Common/ThanhCometics.Common.csproj"
+    },
     "ThanhCometics.Repository/1.0.0": {
       "type": "project",
       "path": "../ThanhCometics.Data/ThanhCometics.Repository.csproj",
@@ -5524,7 +5539,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.126/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.129/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

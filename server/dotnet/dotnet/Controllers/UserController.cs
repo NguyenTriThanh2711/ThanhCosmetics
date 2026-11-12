@@ -7,6 +7,7 @@ namespace ThanhCometics.API.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
+        [HttpGet]
         public IActionResult Index()
         {
             return Ok("Hello from UserController!");
