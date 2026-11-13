@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ThanhCometics.Repository.Models.SkinTestModel
+{
+    public class SkinTestUpdateRequest
+    {
+        [Required]
+        public int SkinTestId { get; set; }
+        [Required]
+        public string SkinTestName { get; set; }
+
+        public bool Status { get; set; }
+
+        public List<SkinTypeQuestionUpdateRequest> SkinTypeQuestions { get; set; } = new List<SkinTypeQuestionUpdateRequest>();
+    }
+}

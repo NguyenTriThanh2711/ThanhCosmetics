@@ -26,4 +26,8 @@
     <ProjectReference Include="..\ThanhCometics.Service\ThanhCometics.Service.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="NewFolder\" />
+  </ItemGroup>
+
 </Project>

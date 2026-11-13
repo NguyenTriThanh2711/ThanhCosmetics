@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ThanhCometics.Common.Helper;
+using ThanhCometics.Repository.Entities;
+using ThanhCometics.Repository.Models.AuthenticationModel;
+using ThanhCometics.Service.Interfaces;
 
 namespace ThanhCometics.Service.Services
 {
-    internal class CustomerSevice
+    public class CustomerSevice : ICustomerService
     {
+        public async Task<MethodResult<Customer>> CreateCustomerAsync(SignupRequest request)
+        {
+            var customer = await _custome
+        } 
     }
 }

@@ -7,7 +7,6 @@ namespace ThanhCometics.API.Controllers
     [ApiController]
     public class AuthController : BaseApiController
     {
-        //private readonly IAuthenticationService _authenticationService;
-
+        private readonly ICustomerSevice customerSevice;
     }
 }

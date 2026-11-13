@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36203.30 d17.14
+VisualStudioVersion = 17.14.36203.30
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThanhCometics.API", "dotnet\ThanhCometics.API.csproj", "{6E691D69-AB7E-466E-B6CD-B538AF8595A8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThanhCometics.Service", "ThanhCometics.Service\ThanhCometics.Service.csproj", "{3A4978A7-552B-46D5-B145-C84DC0BAC0A0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThanhCometics.Repository", "ThanhCometics.Data\ThanhCometics.Repository.csproj", "{118DBF88-0CB4-4B02-819A-6477DB80236F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThanhCometics.Common", "ThanhCosmetics.Common\ThanhCometics.Common.csproj", "{6FD027C4-6B45-428D-BD44-4BA4E6AD3AE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{118DBF88-0CB4-4B02-819A-6477DB80236F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{118DBF88-0CB4-4B02-819A-6477DB80236F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{118DBF88-0CB4-4B02-819A-6477DB80236F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FD027C4-6B45-428D-BD44-4BA4E6AD3AE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FD027C4-6B45-428D-BD44-4BA4E6AD3AE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FD027C4-6B45-428D-BD44-4BA4E6AD3AE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FD027C4-6B45-428D-BD44-4BA4E6AD3AE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

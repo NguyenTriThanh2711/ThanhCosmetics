@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ThanhCometics.Data\ThanhCometics.Repository.csproj" />
+    <ProjectReference Include="..\ThanhCosmetics.Common\ThanhCometics.Common.csproj" />
   </ItemGroup>
 
 </Project>

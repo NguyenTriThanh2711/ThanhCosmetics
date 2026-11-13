@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ThanhCometics.Common.Helper;
+﻿using ThanhCometics.Common.Helper;
+using ThanhCometics.Repository.Models.AuthenticationModel;
 
 namespace ThanhCometics.Service.Interfaces
 {
     public interface ICustomerService
     {
-        Task<MethodResult>
+        Task<MethodResult<String>> SignupAsync(SignupRequest request);
     }
 }
