@@ -1,13 +1,8 @@
 ﻿using AutoMapper;
-using BeautySCProject.Data.Models.AuthenticationModel;
-using Microsoft.EntityFrameworkCore.Metadata;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ThanhCometics.Repository.Entities;
 using ThanhCometics.Repository.Interface;
+using ThanhCometics.Repository.Models.AuthenticationModel;
+using Microsoft.EntityFrameworkCore;
 
 namespace ThanhCometics.Repository.Repositories
 {
@@ -23,24 +18,45 @@ namespace ThanhCometics.Repository.Repositories
             _mapper = mapper;
         }
 
-        public Task<Account> CreateAccountAsync(SignupRequest request)
+        public async Task<Account> CreateAccountAsync(SignupRequest request)
         {
-            return new Account();
+            try
+            {
+                var account = _mapper.Map<Account>(request);
+                await _dbContext.Accounts.AddAsync(account);
+                await _unitOfWork.SaveChangesAsync();
+                return account;
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
         }
 
-        public Task<Customer?> CreateCustomerAsync(Customer customer)
+        public async Task<Customer?> CreateCustomerAsync(Customer customer)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Entities.AddAsync(customer);
+                await _unitOfWork.SaveChangesAsync();
+                return customer;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
         }
 
-        public Task<Customer?> FindByEmailAsync(string email)
+        public async Task<Customer?> FindByEmailAsync(string email)
         {
-            throw new NotImplementedException();
+            return await Entities.Include(x => x.Account).Include(x => x.SkinType).FirstOrDefaultAsync(u => u.Account.Email == email);
         }
 
-        public Task<Customer?> FindByPhoneNumberAsync(string phoneNumber)
+        public async Task<Customer?> FindByPhoneNumberAsync(string phoneNumber)
         {
-            throw new NotImplementedException();
+            return await Entities.Include(x => x.Account).FirstOrDefaultAsync(u => u.PhoneNumber == phoneNumber);
         }
     }
 }

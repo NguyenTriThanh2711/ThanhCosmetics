@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ThanhCometics.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3163e4399e8a9044dd10e4b75f9c03a2297bec78")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ea29b7013725a88f3420fe3a2b0477be58c5ada")]
 [assembly: System.Reflection.AssemblyProductAttribute("ThanhCometics.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ThanhCometics.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
