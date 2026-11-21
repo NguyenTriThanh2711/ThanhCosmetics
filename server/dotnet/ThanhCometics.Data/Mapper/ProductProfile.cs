@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using BeautySCProject.Data.Entities;
-using BeautySCProject.Data.Models.OrderModel;
-using BeautySCProject.Data.Models.ProductModel;
-using BeautySCProject.Data.ViewModels;
+using ThanhCometics.Repository.Entities;
+using ThanhCometics.Repository.Models.OrderModel;
+using ThanhCometics.Repository.Models.ProductModel;
+using ThanhCometics.Repository.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BeautySCProject.Data.Mapper
+namespace ThanhCometics.Repository.Mapper
 {
     public class ProductProfile : Profile
     {

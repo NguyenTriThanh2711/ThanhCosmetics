@@ -1,9 +1,10 @@
 ﻿using AutoMapper;
-using BeautySCProject.Data.Models.OrderModel;
-using ThanhCometics.Data.ViewModels;
+using ThanhCometics.Repository.Models.OrderModel;
+using ThanhCometics.Repository.ViewModels;
 using ThanhCometics.Repository.Entities;
+using ThanhCometics.Common.Helpers;
 
-namespace BeautySCProject.Data.Mapper
+namespace ThanhCometics.Repository.Mapper
 {
     public class OrderProfile : Profile
     {

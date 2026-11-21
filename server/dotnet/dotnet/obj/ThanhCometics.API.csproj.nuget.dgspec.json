@@ -137,7 +137,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCosmetics.Common\\ThanhCometics.Common.csproj": {
+                "projectPath": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCosmetics.Common\\ThanhCometics.Common.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -158,6 +162,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[17.0.0, )"
+            },
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.2.0, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

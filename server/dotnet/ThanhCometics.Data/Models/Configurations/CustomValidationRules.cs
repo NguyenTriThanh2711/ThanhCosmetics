@@ -1,13 +1,11 @@
-﻿using ThanhCometics.Repository.Entities;
-using ThanhCometics.Repository.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ThanhCometics.Repository.Models.Configuration
+namespace ThanhCometics.Repository.Models.Configurations
 {
     public class BirthdayValidation : ValidationAttribute
     {

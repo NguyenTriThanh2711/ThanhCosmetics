@@ -1,15 +1,9 @@
 ﻿using AutoMapper;
-using BeautySCProject.Data.Entities;
-using BeautySCProject.Data.Models.RoutineModel;
-using BeautySCProject.Data.ViewModels;
-using BeautySCProject.Domain.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using ThanhCometics.Repository.Entities;
+using ThanhCometics.Repository.ViewModels;
+using ThanhCometics.Repository.Models.RoutineModel;
 
-namespace BeautySCProject.Data.Mapper
+namespace ThanhCometics.Repository.Mapper
 {
     public class RoutineProfile:Profile
     {

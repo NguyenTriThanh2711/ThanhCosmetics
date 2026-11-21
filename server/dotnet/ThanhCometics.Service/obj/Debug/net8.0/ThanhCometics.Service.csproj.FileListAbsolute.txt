@@ -16,3 +16,5 @@ E:\ThanhCosmetics\server\dotnet\ThanhCometics.Service\obj\Debug\net8.0\ref\Thanh
 E:\ThanhCosmetics\server\dotnet\ThanhCometics.Service\bin\Debug\net8.0\ThanhCometics.Repository.dll
 E:\ThanhCosmetics\server\dotnet\ThanhCometics.Service\bin\Debug\net8.0\ThanhCometics.Repository.pdb
 E:\ThanhCosmetics\server\dotnet\ThanhCometics.Service\obj\Debug\net8.0\ThanhCom.69A01A0F.Up2Date
+E:\ThanhCosmetics\server\dotnet\ThanhCometics.Service\bin\Debug\net8.0\ThanhCometics.Common.dll
+E:\ThanhCosmetics\server\dotnet\ThanhCometics.Service\bin\Debug\net8.0\ThanhCometics.Common.pdb

@@ -67,6 +67,15 @@
           }
         }
       },
+      "BCrypt.Net-Next/4.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/BCrypt-Net-Next.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/BCrypt-Net-Next.dll": {}
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -1673,6 +1682,16 @@
             "rid": "win"
           }
         }
+      },
+      "ThanhCometics.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/ThanhCometics.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ThanhCometics.Common.dll": {}
+        }
       }
     }
   },
@@ -1735,6 +1754,31 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "BCrypt.Net-Next/4.2.0": {
+      "sha512": "gwLD2KfCuwQesP17aVh4h6lpiMPEVt5Lbpndo0ej903hNUUTtyxt3ARdDjmuydBRTAUICc7OVKVbaOvc6SQYXA==",
+      "type": "package",
+      "path": "bcrypt.net-next/4.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bcrypt.net-next.4.2.0.nupkg.sha512",
+        "bcrypt.net-next.nuspec",
+        "ico.png",
+        "lib/net10.0/BCrypt-Net-Next.dll",
+        "lib/net10.0/BCrypt.Net-Next.xml",
+        "lib/net462/BCrypt-Net-Next.dll",
+        "lib/net462/BCrypt.Net-Next.xml",
+        "lib/net472/BCrypt-Net-Next.dll",
+        "lib/net472/BCrypt.Net-Next.xml",
+        "lib/net48/BCrypt-Net-Next.dll",
+        "lib/net48/BCrypt.Net-Next.xml",
+        "lib/netstandard2.0/BCrypt-Net-Next.dll",
+        "lib/netstandard2.0/BCrypt.Net-Next.xml",
+        "lib/netstandard2.1/BCrypt-Net-Next.dll",
+        "lib/netstandard2.1/BCrypt.Net-Next.xml",
+        "readme.md"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -4860,16 +4904,23 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "ThanhCometics.Common/1.0.0": {
+      "type": "project",
+      "path": "../ThanhCosmetics.Common/ThanhCometics.Common.csproj",
+      "msbuildProject": "../ThanhCosmetics.Common/ThanhCometics.Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "AutoMapper >= 17.0.0",
+      "BCrypt.Net-Next >= 4.2.0",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 10.0.7",
       "Pomelo.EntityFrameworkCore.MySql >= 9.0.0",
-      "System.Diagnostics.Tools >= 4.3.0"
+      "System.Diagnostics.Tools >= 4.3.0",
+      "ThanhCometics.Common >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4903,7 +4954,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCosmetics.Common\\ThanhCometics.Common.csproj": {
+              "projectPath": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCosmetics.Common\\ThanhCometics.Common.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -4924,6 +4979,10 @@
           "AutoMapper": {
             "target": "Package",
             "version": "[17.0.0, )"
+          },
+          "BCrypt.Net-Next": {
+            "target": "Package",
+            "version": "[4.2.0, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

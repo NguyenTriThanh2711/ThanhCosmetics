@@ -1,4 +1,4 @@
-﻿using ThanhCometics.Repository.Models.Configuration;
+﻿using ThanhCometics.Repository.Models.Configurations;
 using System.ComponentModel.DataAnnotations;
 
 namespace ThanhCometics.Repository.Models.AuthenticationModel

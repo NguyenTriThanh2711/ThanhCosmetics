@@ -1,10 +1,12 @@
-﻿using ThanhCometics.Common.Helper;
+﻿using ThanhCometics.Common.Helpers;
 using ThanhCometics.Repository.Entities;
 using ThanhCometics.Repository.Interface;
 using ThanhCometics.Repository.Models.AuthenticationModel;
 using ThanhCometics.Service.Interfaces;
 using Microsoft.AspNetCore.Http;
 using AutoMapper;
+using ThanhCometics.Repository.ViewModels;
+using ThanhCometics.Repository.Models.CustomerModel;
 namespace ThanhCometics.Service.Services
 {
     public class CustomerSevice : ICustomerService
@@ -16,10 +18,16 @@ namespace ThanhCometics.Service.Services
             _customerRepository = customerRepository;
             _mapper = mapper;
         }
+
+        public Task<MethodResult<string>> ActiveCustomerAsync(int userId)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<MethodResult<Customer>> CreateCustomerAsync(SignupRequest request)
         {
             var createdAccount = await _customerRepository.CreateAccountAsync(request);
-            if(createdAccount == null)
+            if (createdAccount == null)
             {
                 return new MethodResult<Customer>.Failure("False to create new account", StatusCodes.Status500InternalServerError);
             }
@@ -35,6 +43,61 @@ namespace ThanhCometics.Service.Services
             return new MethodResult<Customer>.Success(createdCustomer);
         }
 
+        public Task<MethodResult<string>> DeactiveCustomerAsync(int userId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<MethodResult<Account>> GetAccountByEmailAsync(string email)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<MethodResult<Customer>> GetByEmailAsync(string email)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<MethodResult<Customer>> GetByPhoneNumberAsync(string phoneNumber)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<MethodResult<Customer>> GetCustomerByIdAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<MethodResult<IEnumerable<CustomerViewModel>>> GetCustomersAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<MethodResult<string>> GetNumberCustomerAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<MethodResult<ProfileViewModel>> GetProfileAsync(string email)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<MethodResult<string>> RequestPasswordResetAsync(string email)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<MethodResult<string>> RequestPasswordUpdateAsync(string email, PasswordUpdateRequest request)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<MethodResult<string>> RequestResendVerificationEmailAsync(string email)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<MethodResult<string>> SignupAsync(SignupRequest request)
         {
             var dupEmailCustomer = await _customerRepository.FindByEmailAsync(request.Email);
@@ -45,9 +108,34 @@ namespace ThanhCometics.Service.Services
 
             // temporary
             var result = await CreateCustomerAsync(request);
-            if (result is MethodResult<Customer>.Failure failure) return new MethodResult<string>.Failure(failure.Message, failure.StatusCode);
+            if (result is MethodResult<Customer>.Failure failure) return new MethodResult<string>.Failure("False to create account", failure.StatusCode);
             return new MethodResult<string>.Success("Signup successful");
 
+        }
+
+        public Task<MethodResult<string>> UpdateAvatarAsync(string email, string image)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<MethodResult<string>> UpdateProfileAsync(Customer cus, ProfileUpdateRequest request)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<MethodResult<string>> VerifyAccountAsync(string token)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<MethodResult<string>> VerifyCreatedEmailAsync(Customer cus)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<MethodResult<string>> VerifyPasswordResetAsync(string token, PasswordResetRequest request)
+        {
+            throw new NotImplementedException();
         }
     }
 }

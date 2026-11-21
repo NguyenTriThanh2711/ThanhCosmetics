@@ -1,15 +1,15 @@
 ﻿using AutoMapper;
 using ThanhCometics.Common.Helpers;
 using ThanhCometics.Repository.Entities;
-using BeautySCProject.Data.Models.AuthenticationModel;
-using BeautySCProject.Data.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ThanhCometics.Repository.Models.AuthenticationModel;
+using ThanhCometics.Repository.ViewModels;
 
-namespace BeautySCProject.Data.Mapper
+namespace ThanhCometics.Repository.Mapper
 {
     public class CustomerProfile : Profile
     {

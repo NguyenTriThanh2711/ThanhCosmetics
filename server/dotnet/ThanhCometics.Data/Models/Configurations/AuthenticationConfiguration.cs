@@ -1,4 +1,4 @@
-﻿namespace ThanhCometics.Repository.Models.Configuration
+﻿namespace ThanhCometics.Repository.Models.Configurations
 {
     public class AuthenticationConfiguration
     {

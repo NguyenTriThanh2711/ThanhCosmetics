@@ -1,5 +1,5 @@
 ﻿
-namespace ThanhCometics.Data.ViewModels
+namespace ThanhCometics.Repository.ViewModels
 {
     public class ProductDetailViewModel
     {

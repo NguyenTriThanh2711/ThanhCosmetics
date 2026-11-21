@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ThanhCometics.Common.Helper
+namespace ThanhCometics.Common.Helpers
 {
     public static class Constants
     {

@@ -1,0 +1,12 @@
+E:\ThanhCosmetics\server\dotnet\ThanhCosmetics.Common\bin\Debug\net8.0\ThanhCometics.Common.deps.json
+E:\ThanhCosmetics\server\dotnet\ThanhCosmetics.Common\bin\Debug\net8.0\ThanhCometics.Common.dll
+E:\ThanhCosmetics\server\dotnet\ThanhCosmetics.Common\bin\Debug\net8.0\ThanhCometics.Common.pdb
+E:\ThanhCosmetics\server\dotnet\ThanhCosmetics.Common\obj\Debug\net8.0\ThanhCometics.Common.GeneratedMSBuildEditorConfig.editorconfig
+E:\ThanhCosmetics\server\dotnet\ThanhCosmetics.Common\obj\Debug\net8.0\ThanhCometics.Common.AssemblyInfoInputs.cache
+E:\ThanhCosmetics\server\dotnet\ThanhCosmetics.Common\obj\Debug\net8.0\ThanhCometics.Common.AssemblyInfo.cs
+E:\ThanhCosmetics\server\dotnet\ThanhCosmetics.Common\obj\Debug\net8.0\ThanhCometics.Common.csproj.CoreCompileInputs.cache
+E:\ThanhCosmetics\server\dotnet\ThanhCosmetics.Common\obj\Debug\net8.0\ThanhCometics.Common.sourcelink.json
+E:\ThanhCosmetics\server\dotnet\ThanhCosmetics.Common\obj\Debug\net8.0\ThanhCometics.Common.dll
+E:\ThanhCosmetics\server\dotnet\ThanhCosmetics.Common\obj\Debug\net8.0\refint\ThanhCometics.Common.dll
+E:\ThanhCosmetics\server\dotnet\ThanhCosmetics.Common\obj\Debug\net8.0\ThanhCometics.Common.pdb
+E:\ThanhCosmetics\server\dotnet\ThanhCosmetics.Common\obj\Debug\net8.0\ref\ThanhCometics.Common.dll

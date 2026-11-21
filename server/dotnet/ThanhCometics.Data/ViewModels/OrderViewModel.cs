@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ThanhCometics.Data.ViewModels
+namespace ThanhCometics.Repository.ViewModels
 {
     public class OrderViewModel
     {

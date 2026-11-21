@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
 using ThanhCometics.Repository.Entities;
 using ThanhCometics.Repository.Models.FeedbackModel;
-using BeautySCProject.Data.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ThanhCometics.Repository.ViewModels;
 
 namespace BeautySCProject.Data.Mapper
 {

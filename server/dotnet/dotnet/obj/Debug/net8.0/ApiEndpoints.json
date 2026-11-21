@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "ThanhCometics.API.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ThanhCometics.Repository.Models.AuthenticationModel.SignupRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ThanhCometics.API.Controllers.UserController",
     "Method": "Index",
     "RelativePath": "api/User",

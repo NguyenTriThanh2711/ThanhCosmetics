@@ -1,14 +1,14 @@
 ﻿using AutoMapper;
-using BeautySCProject.Data.Entities;
-using BeautySCProject.Data.Models.SkinTypeModel;
-using BeautySCProject.Data.ViewModels;
+using ThanhCometics.Repository.Entities;
+using ThanhCometics.Repository.Models.SkinTypeModel;
+using ThanhCometics.Repository.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BeautySCProject.Data.Mapper
+namespace ThanhCometics.Repository.Mapper
 {
     public class SkinTypeProfile:Profile
     {

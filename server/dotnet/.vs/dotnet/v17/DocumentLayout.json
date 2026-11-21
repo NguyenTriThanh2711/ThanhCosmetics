@@ -3,107 +3,36 @@
   "WorkspaceRootPath": "E:\\ThanhCosmetics\\server\\dotnet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|e:\\thanhcosmetics\\server\\dotnet\\thanhcometics.data\\interface\\itestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|solutionrelative:thanhcometics.data\\interface\\itestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A4978A7-552B-46D5-B145-C84DC0BAC0A0}|ThanhCometics.Service\\ThanhCometics.Service.csproj|e:\\thanhcosmetics\\server\\dotnet\\thanhcometics.service\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4978A7-552B-46D5-B145-C84DC0BAC0A0}|ThanhCometics.Service\\ThanhCometics.Service.csproj|solutionrelative:thanhcometics.service\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|e:\\thanhcosmetics\\server\\dotnet\\thanhcometics.data\\models\\shippingaddressmodel\\shippingadressupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|solutionrelative:thanhcometics.data\\models\\shippingaddressmodel\\shippingadressupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A4978A7-552B-46D5-B145-C84DC0BAC0A0}|ThanhCometics.Service\\ThanhCometics.Service.csproj|e:\\thanhcosmetics\\server\\dotnet\\thanhcometics.service\\interfaces\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4978A7-552B-46D5-B145-C84DC0BAC0A0}|ThanhCometics.Service\\ThanhCometics.Service.csproj|solutionrelative:thanhcometics.service\\interfaces\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|e:\\thanhcosmetics\\server\\dotnet\\thanhcometics.data\\models\\skintestmodel\\listuseranswermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|solutionrelative:thanhcometics.data\\models\\skintestmodel\\listuseranswermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|e:\\thanhcosmetics\\server\\dotnet\\thanhcometics.data\\models\\routinemodel\\routineviewmodeladmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|solutionrelative:thanhcometics.data\\models\\routinemodel\\routineviewmodeladmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|e:\\thanhcosmetics\\server\\dotnet\\thanhcometics.data\\models\\routinemodel\\routineviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|solutionrelative:thanhcometics.data\\models\\routinemodel\\routineviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|e:\\thanhcosmetics\\server\\dotnet\\thanhcometics.data\\models\\routinemodel\\routineupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|solutionrelative:thanhcometics.data\\models\\routinemodel\\routineupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|e:\\thanhcosmetics\\server\\dotnet\\thanhcometics.data\\thanhcometics.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|solutionrelative:thanhcometics.data\\thanhcometics.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|e:\\thanhcosmetics\\server\\dotnet\\thanhcometics.data\\thanhcometicsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|solutionrelative:thanhcometics.data\\thanhcometicsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|e:\\thanhcosmetics\\server\\dotnet\\thanhcometics.data\\migrations\\thanhcometicsdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|solutionrelative:thanhcometics.data\\migrations\\thanhcometicsdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|e:\\thanhcosmetics\\server\\dotnet\\thanhcometics.data\\migrations\\20260427082454_initialdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|solutionrelative:thanhcometics.data\\migrations\\20260427082454_initialdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FD027C4-6B45-428D-BD44-4BA4E6AD3AE3}|ThanhCosmetics.Common\\ThanhCometics.Common.csproj|e:\\thanhcosmetics\\server\\dotnet\\thanhcosmetics.common\\thanhcometics.common.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{6FD027C4-6B45-428D-BD44-4BA4E6AD3AE3}|ThanhCosmetics.Common\\ThanhCometics.Common.csproj|solutionrelative:thanhcosmetics.common\\thanhcometics.common.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A4978A7-552B-46D5-B145-C84DC0BAC0A0}|ThanhCometics.Service\\ThanhCometics.Service.csproj|e:\\thanhcosmetics\\server\\dotnet\\thanhcometics.service\\services\\testservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4978A7-552B-46D5-B145-C84DC0BAC0A0}|ThanhCometics.Service\\ThanhCometics.Service.csproj|solutionrelative:thanhcometics.service\\services\\testservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A4978A7-552B-46D5-B145-C84DC0BAC0A0}|ThanhCometics.Service\\ThanhCometics.Service.csproj|e:\\thanhcosmetics\\server\\dotnet\\thanhcometics.service\\services\\tokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4978A7-552B-46D5-B145-C84DC0BAC0A0}|ThanhCometics.Service\\ThanhCometics.Service.csproj|solutionrelative:thanhcometics.service\\services\\tokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E691D69-AB7E-466E-B6CD-B538AF8595A8}|dotnet\\ThanhCometics.API.csproj|e:\\thanhcosmetics\\server\\dotnet\\dotnet\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E691D69-AB7E-466E-B6CD-B538AF8595A8}|dotnet\\ThanhCometics.API.csproj|solutionrelative:dotnet\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E691D69-AB7E-466E-B6CD-B538AF8595A8}|dotnet\\ThanhCometics.API.csproj|e:\\thanhcosmetics\\server\\dotnet\\dotnet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E691D69-AB7E-466E-B6CD-B538AF8595A8}|dotnet\\ThanhCometics.API.csproj|solutionrelative:dotnet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A4978A7-552B-46D5-B145-C84DC0BAC0A0}|ThanhCometics.Service\\ThanhCometics.Service.csproj|e:\\thanhcosmetics\\server\\dotnet\\thanhcometics.service\\interfaces\\itokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4978A7-552B-46D5-B145-C84DC0BAC0A0}|ThanhCometics.Service\\ThanhCometics.Service.csproj|solutionrelative:thanhcometics.service\\interfaces\\itokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E691D69-AB7E-466E-B6CD-B538AF8595A8}|dotnet\\ThanhCometics.API.csproj|e:\\thanhcosmetics\\server\\dotnet\\dotnet\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E691D69-AB7E-466E-B6CD-B538AF8595A8}|dotnet\\ThanhCometics.API.csproj|solutionrelative:dotnet\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A4978A7-552B-46D5-B145-C84DC0BAC0A0}|ThanhCometics.Service\\ThanhCometics.Service.csproj|e:\\thanhcosmetics\\server\\dotnet\\thanhcometics.service\\services\\customersevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4978A7-552B-46D5-B145-C84DC0BAC0A0}|ThanhCometics.Service\\ThanhCometics.Service.csproj|solutionrelative:thanhcometics.service\\services\\customersevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E691D69-AB7E-466E-B6CD-B538AF8595A8}|dotnet\\ThanhCometics.API.csproj|e:\\thanhcosmetics\\server\\dotnet\\dotnet\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E691D69-AB7E-466E-B6CD-B538AF8595A8}|dotnet\\ThanhCometics.API.csproj|solutionrelative:dotnet\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A4978A7-552B-46D5-B145-C84DC0BAC0A0}|ThanhCometics.Service\\ThanhCometics.Service.csproj|e:\\thanhcosmetics\\server\\dotnet\\thanhcometics.service\\interfaces\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4978A7-552B-46D5-B145-C84DC0BAC0A0}|ThanhCometics.Service\\ThanhCometics.Service.csproj|solutionrelative:thanhcometics.service\\interfaces\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E691D69-AB7E-466E-B6CD-B538AF8595A8}|dotnet\\ThanhCometics.API.csproj|e:\\thanhcosmetics\\server\\dotnet\\dotnet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6E691D69-AB7E-466E-B6CD-B538AF8595A8}|dotnet\\ThanhCometics.API.csproj|solutionrelative:dotnet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E691D69-AB7E-466E-B6CD-B538AF8595A8}|dotnet\\ThanhCometics.API.csproj|e:\\thanhcosmetics\\server\\dotnet\\dotnet\\controllers\\baseapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E691D69-AB7E-466E-B6CD-B538AF8595A8}|dotnet\\ThanhCometics.API.csproj|solutionrelative:dotnet\\controllers\\baseapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|e:\\thanhcosmetics\\server\\dotnet\\thanhcometics.data\\entities\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|solutionrelative:thanhcometics.data\\entities\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\BeautySC_BE\\src\\BeautySCProject.API\\Controllers\\CustomerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A4978A7-552B-46D5-B145-C84DC0BAC0A0}|ThanhCometics.Service\\ThanhCometics.Service.csproj|e:\\thanhcosmetics\\server\\dotnet\\thanhcometics.service\\interfaces\\itestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4978A7-552B-46D5-B145-C84DC0BAC0A0}|ThanhCometics.Service\\ThanhCometics.Service.csproj|solutionrelative:thanhcometics.service\\interfaces\\itestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E691D69-AB7E-466E-B6CD-B538AF8595A8}|dotnet\\ThanhCometics.API.csproj|e:\\thanhcosmetics\\server\\dotnet\\dotnet\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E691D69-AB7E-466E-B6CD-B538AF8595A8}|dotnet\\ThanhCometics.API.csproj|solutionrelative:dotnet\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E691D69-AB7E-466E-B6CD-B538AF8595A8}|dotnet\\ThanhCometics.API.csproj|e:\\thanhcosmetics\\server\\dotnet\\dotnet\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6E691D69-AB7E-466E-B6CD-B538AF8595A8}|dotnet\\ThanhCometics.API.csproj|solutionrelative:dotnet\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|e:\\thanhcosmetics\\server\\dotnet\\thanhcometics.data\\entities\\blogdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|solutionrelative:thanhcometics.data\\entities\\blogdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FD027C4-6B45-428D-BD44-4BA4E6AD3AE3}|ThanhCosmetics.Common\\ThanhCometics.Common.csproj|e:\\thanhcosmetics\\server\\dotnet\\thanhcosmetics.common\\helper\\methodresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FD027C4-6B45-428D-BD44-4BA4E6AD3AE3}|ThanhCosmetics.Common\\ThanhCometics.Common.csproj|solutionrelative:thanhcosmetics.common\\helper\\methodresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|e:\\thanhcosmetics\\server\\dotnet\\thanhcometics.data\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|solutionrelative:thanhcometics.data\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|e:\\thanhcosmetics\\server\\dotnet\\thanhcometics.data\\models\\authenticationmodel\\signuprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{118DBF88-0CB4-4B02-819A-6477DB80236F}|ThanhCometics.Data\\ThanhCometics.Repository.csproj|solutionrelative:thanhcometics.data\\models\\authenticationmodel\\signuprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -113,320 +42,107 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ShippingAdressUpdateRequest.cs",
-              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\Models\\ShippingAddressModel\\ShippingAdressUpdateRequest.cs",
-              "RelativeDocumentMoniker": "ThanhCometics.Data\\Models\\ShippingAddressModel\\ShippingAdressUpdateRequest.cs",
-              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\Models\\ShippingAddressModel\\ShippingAdressUpdateRequest.cs",
-              "RelativeToolTip": "ThanhCometics.Data\\Models\\ShippingAddressModel\\ShippingAdressUpdateRequest.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAgwAcAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-13T09:42:35.464Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RoutineViewModelAdmin.cs",
-              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\Models\\RoutineModel\\RoutineViewModelAdmin.cs",
-              "RelativeDocumentMoniker": "ThanhCometics.Data\\Models\\RoutineModel\\RoutineViewModelAdmin.cs",
-              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\Models\\RoutineModel\\RoutineViewModelAdmin.cs",
-              "RelativeToolTip": "ThanhCometics.Data\\Models\\RoutineModel\\RoutineViewModelAdmin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-13T09:42:14.681Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RoutineViewModel.cs",
-              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\Models\\RoutineModel\\RoutineViewModel.cs",
-              "RelativeDocumentMoniker": "ThanhCometics.Data\\Models\\RoutineModel\\RoutineViewModel.cs",
-              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\Models\\RoutineModel\\RoutineViewModel.cs",
-              "RelativeToolTip": "ThanhCometics.Data\\Models\\RoutineModel\\RoutineViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-13T09:42:10.881Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RoutineUpdateRequest.cs",
-              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\Models\\RoutineModel\\RoutineUpdateRequest.cs",
-              "RelativeDocumentMoniker": "ThanhCometics.Data\\Models\\RoutineModel\\RoutineUpdateRequest.cs",
-              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\Models\\RoutineModel\\RoutineUpdateRequest.cs",
-              "RelativeToolTip": "ThanhCometics.Data\\Models\\RoutineModel\\RoutineUpdateRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-13T09:42:08.336Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ListUserAnswerModel.cs",
-              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\Models\\SkinTestModel\\ListUserAnswerModel.cs",
-              "RelativeDocumentMoniker": "ThanhCometics.Data\\Models\\SkinTestModel\\ListUserAnswerModel.cs",
-              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\Models\\SkinTestModel\\ListUserAnswerModel.cs",
-              "RelativeToolTip": "ThanhCometics.Data\\Models\\SkinTestModel\\ListUserAnswerModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-13T09:41:02.625Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ThanhCometics.Repository.csproj",
-              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\ThanhCometics.Repository.csproj",
-              "RelativeDocumentMoniker": "ThanhCometics.Data\\ThanhCometics.Repository.csproj",
-              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\ThanhCometics.Repository.csproj",
-              "RelativeToolTip": "ThanhCometics.Data\\ThanhCometics.Repository.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-11-12T09:27:48.267Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ThanhCometicsDBContext.cs",
-              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\ThanhCometicsDBContext.cs",
-              "RelativeDocumentMoniker": "ThanhCometics.Data\\ThanhCometicsDBContext.cs",
-              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\ThanhCometicsDBContext.cs",
-              "RelativeToolTip": "ThanhCometics.Data\\ThanhCometicsDBContext.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAqwAYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-31T17:06:54.317Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ThanhCometicsDBContextModelSnapshot.cs",
-              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\Migrations\\ThanhCometicsDBContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "ThanhCometics.Data\\Migrations\\ThanhCometicsDBContextModelSnapshot.cs",
-              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\Migrations\\ThanhCometicsDBContextModelSnapshot.cs",
-              "RelativeToolTip": "ThanhCometics.Data\\Migrations\\ThanhCometicsDBContextModelSnapshot.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-12T09:36:10.196Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "MethodResult.cs",
-              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCosmetics.Common\\Helper\\MethodResult.cs",
-              "RelativeDocumentMoniker": "ThanhCosmetics.Common\\Helper\\MethodResult.cs",
-              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCosmetics.Common\\Helper\\MethodResult.cs",
-              "RelativeToolTip": "ThanhCosmetics.Common\\Helper\\MethodResult.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-12T07:37:26.256Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "20260427082454_InitialDb.cs",
-              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\Migrations\\20260427082454_InitialDb.cs",
-              "RelativeDocumentMoniker": "ThanhCometics.Data\\Migrations\\20260427082454_InitialDb.cs",
-              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\Migrations\\20260427082454_InitialDb.cs",
-              "RelativeToolTip": "ThanhCometics.Data\\Migrations\\20260427082454_InitialDb.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-12T09:36:06.449Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ITestRepository.cs",
-              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\Interface\\ITestRepository.cs",
-              "RelativeDocumentMoniker": "ThanhCometics.Data\\Interface\\ITestRepository.cs",
-              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\Interface\\ITestRepository.cs",
-              "RelativeToolTip": "ThanhCometics.Data\\Interface\\ITestRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABHAAAAAAAAAA==",
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Service\\Services\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "ThanhCometics.Service\\Services\\AuthenticationService.cs",
+              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Service\\Services\\AuthenticationService.cs",
+              "RelativeToolTip": "ThanhCometics.Service\\Services\\AuthenticationService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAuwCoAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-12T09:28:05.001Z",
+              "WhenOpened": "2026-11-18T05:02:50.342Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Category.cs",
-              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\Entities\\Category.cs",
-              "RelativeDocumentMoniker": "ThanhCometics.Data\\Entities\\Category.cs",
-              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\Entities\\Category.cs",
-              "RelativeToolTip": "ThanhCometics.Data\\Entities\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "TokenGenerator.cs",
+              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Service\\Services\\TokenGenerator.cs",
+              "RelativeDocumentMoniker": "ThanhCometics.Service\\Services\\TokenGenerator.cs",
+              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Service\\Services\\TokenGenerator.cs",
+              "RelativeToolTip": "ThanhCometics.Service\\Services\\TokenGenerator.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAAAG8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-12T09:28:31.038Z"
+              "WhenOpened": "2026-11-18T05:18:56.939Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ThanhCometics.Common.csproj",
-              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCosmetics.Common\\ThanhCometics.Common.csproj",
-              "RelativeDocumentMoniker": "ThanhCosmetics.Common\\ThanhCometics.Common.csproj",
-              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCosmetics.Common\\ThanhCometics.Common.csproj",
-              "RelativeToolTip": "ThanhCosmetics.Common\\ThanhCometics.Common.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-11-12T07:36:05.521Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\dotnet\\Program.cs",
-              "RelativeDocumentMoniker": "dotnet\\Program.cs",
-              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\dotnet\\Program.cs",
-              "RelativeToolTip": "dotnet\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "ITokenGenerator.cs",
+              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Service\\Interfaces\\ITokenGenerator.cs",
+              "RelativeDocumentMoniker": "ThanhCometics.Service\\Interfaces\\ITokenGenerator.cs",
+              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Service\\Interfaces\\ITokenGenerator.cs",
+              "RelativeToolTip": "ThanhCometics.Service\\Interfaces\\ITokenGenerator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-31T17:08:52.64Z"
+              "WhenOpened": "2026-11-18T05:13:16.388Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\dotnet\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "dotnet\\Controllers\\UserController.cs",
-              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\dotnet\\Controllers\\UserController.cs",
-              "RelativeToolTip": "dotnet\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "IAuthenticationService.cs",
+              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Service\\Interfaces\\IAuthenticationService.cs",
+              "RelativeDocumentMoniker": "ThanhCometics.Service\\Interfaces\\IAuthenticationService.cs",
+              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Service\\Interfaces\\IAuthenticationService.cs",
+              "RelativeToolTip": "ThanhCometics.Service\\Interfaces\\IAuthenticationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-31T17:14:06.273Z"
+              "WhenOpened": "2026-11-18T05:01:57.794Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 3,
               "Title": "AuthController.cs",
               "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\dotnet\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "dotnet\\Controllers\\AuthController.cs",
               "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\dotnet\\Controllers\\AuthController.cs",
               "RelativeToolTip": "dotnet\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAawB8AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-31T17:14:02.511Z"
+              "WhenOpened": "2026-11-17T03:14:41.224Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "TestService.cs",
-              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Service\\Services\\TestService.cs",
-              "RelativeDocumentMoniker": "ThanhCometics.Service\\Services\\TestService.cs",
-              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Service\\Services\\TestService.cs",
-              "RelativeToolTip": "ThanhCometics.Service\\Services\\TestService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "CustomerSevice.cs",
+              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Service\\Services\\CustomerSevice.cs",
+              "RelativeDocumentMoniker": "ThanhCometics.Service\\Services\\CustomerSevice.cs",
+              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Service\\Services\\CustomerSevice.cs",
+              "RelativeToolTip": "ThanhCometics.Service\\Services\\CustomerSevice.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAuwGoAAAB7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-31T17:11:13.975Z"
+              "WhenOpened": "2026-11-17T03:13:02.952Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\dotnet\\appsettings.json",
-              "RelativeDocumentMoniker": "dotnet\\appsettings.json",
-              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\dotnet\\appsettings.json",
-              "RelativeToolTip": "dotnet\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-07-31T17:07:59.995Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "TestController.cs",
-              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\dotnet\\Controllers\\TestController.cs",
-              "RelativeDocumentMoniker": "dotnet\\Controllers\\TestController.cs",
-              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\dotnet\\Controllers\\TestController.cs",
-              "RelativeToolTip": "dotnet\\Controllers\\TestController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "SignupRequest.cs",
+              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\Models\\AuthenticationModel\\SignupRequest.cs",
+              "RelativeDocumentMoniker": "ThanhCometics.Data\\Models\\AuthenticationModel\\SignupRequest.cs",
+              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\Models\\AuthenticationModel\\SignupRequest.cs",
+              "RelativeToolTip": "ThanhCometics.Data\\Models\\AuthenticationModel\\SignupRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-31T17:14:05.411Z"
+              "WhenOpened": "2026-11-17T03:12:48.813Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "BaseApiController.cs",
-              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\dotnet\\Controllers\\BaseApiController.cs",
-              "RelativeDocumentMoniker": "dotnet\\Controllers\\BaseApiController.cs",
-              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\dotnet\\Controllers\\BaseApiController.cs",
-              "RelativeToolTip": "dotnet\\Controllers\\BaseApiController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "ICustomerService.cs",
+              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Service\\Interfaces\\ICustomerService.cs",
+              "RelativeDocumentMoniker": "ThanhCometics.Service\\Interfaces\\ICustomerService.cs",
+              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Service\\Interfaces\\ICustomerService.cs",
+              "RelativeToolTip": "ThanhCometics.Service\\Interfaces\\ICustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-12T07:20:50.4Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Feedback.cs",
-              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\Entities\\Feedback.cs",
-              "RelativeDocumentMoniker": "ThanhCometics.Data\\Entities\\Feedback.cs",
-              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\Entities\\Feedback.cs",
-              "RelativeToolTip": "ThanhCometics.Data\\Entities\\Feedback.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-12T07:21:27.645Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ITestService.cs",
-              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Service\\Interfaces\\ITestService.cs",
-              "RelativeDocumentMoniker": "ThanhCometics.Service\\Interfaces\\ITestService.cs",
-              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Service\\Interfaces\\ITestService.cs",
-              "RelativeToolTip": "ThanhCometics.Service\\Interfaces\\ITestService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-31T17:11:14.719Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "CustomerController.cs",
-              "DocumentMoniker": "E:\\BeautySC_BE\\src\\BeautySCProject.API\\Controllers\\CustomerController.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\BeautySC_BE\\src\\BeautySCProject.API\\Controllers\\CustomerController.cs",
-              "ToolTip": "E:\\BeautySC_BE\\src\\BeautySCProject.API\\Controllers\\CustomerController.cs",
-              "RelativeToolTip": "..\\..\\..\\BeautySC_BE\\src\\BeautySCProject.API\\Controllers\\CustomerController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAIBJwDEAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-19T05:15:24.816Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\dotnet\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "dotnet\\WeatherForecast.cs",
-              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\dotnet\\WeatherForecast.cs",
-              "RelativeToolTip": "dotnet\\WeatherForecast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-31T17:08:52.147Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "BlogDetail.cs",
-              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\Entities\\BlogDetail.cs",
-              "RelativeDocumentMoniker": "ThanhCometics.Data\\Entities\\BlogDetail.cs",
-              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\ThanhCometics.Data\\Entities\\BlogDetail.cs",
-              "RelativeToolTip": "ThanhCometics.Data\\Entities\\BlogDetail.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-31T17:02:49.468Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "E:\\ThanhCosmetics\\server\\dotnet\\dotnet\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "dotnet\\Properties\\launchSettings.json",
-              "ToolTip": "E:\\ThanhCosmetics\\server\\dotnet\\dotnet\\Properties\\launchSettings.json",
-              "RelativeToolTip": "dotnet\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-07-31T17:02:13.503Z"
+              "WhenOpened": "2026-11-17T03:11:58.562Z"
             }
           ]
         }

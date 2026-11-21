@@ -1,8 +1,8 @@
-﻿using BeautySCProject.Data.Entities;
-using BeautySCProject.Data.ViewModels;
+﻿using ThanhCometics.Repository.Entities;
+using ThanhCometics.Repository.ViewModels;
 using AutoMapper;
 
-namespace BeautySCProject.Data.Mapper
+namespace ThanhCometics.Repository.Mapper
 {
     public class TransactionProfile : Profile
     {
