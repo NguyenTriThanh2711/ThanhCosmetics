@@ -99,7 +99,7 @@ namespace ThanhCometics.Service.Services
                 [
                     new Claim(ClaimTypes.Email, email)
                 ];
-            DateTime expirationTime = DateTime.UtcNow.AddMinutes(-_configuration.AccessTokenExpiration);
+            DateTime expirationTime = DateTime.UtcNow.AddMinutes(_configuration.AccessTokenExpiration);
             return GenerateToken(
                     _configuration.PasswordResetSecret,
                     _configuration.Issuer,

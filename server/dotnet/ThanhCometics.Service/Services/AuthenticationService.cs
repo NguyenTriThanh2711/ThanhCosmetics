@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ThanhCometics.Common.Helpers;
 using ThanhCometics.Repository.Entities;
+using ThanhCometics.Repository.Interfaces;
 using ThanhCometics.Repository.Models.AuthenticationModel;
 using ThanhCometics.Service.Interfaces;
 
@@ -15,40 +16,49 @@ namespace ThanhCometics.Service.Services
     {
         private readonly ITokenGenerator _tokenGenerator;
         private readonly ICustomerService _customerService;
+        private readonly IRefreshTokenRepository _refreshTokenRepository;
         public AuthenticationService(
             ITokenGenerator tokenGenerator,
-            ICustomerService customerService
+            ICustomerService customerService,
+            IRefreshTokenRepository refreshTokenRepository
             )
         {
             _tokenGenerator = tokenGenerator;
             _customerService = customerService;
+            _refreshTokenRepository = refreshTokenRepository;
         }
         public async Task<MethodResult<AccessToken>> AuthenticateAsync(Account account)
-        => await _customerService.GetByEmailAsync(account.Email).Result.Bind<AccessToken>(customer =>
-        {
-            AccessToken accessToken = new AccessToken();
-            if(customer.Account.Role == Constants.USER_ROLE_CUSTOMER)
+        => await _customerService.GetByEmailAsync(account.Email).Result.Bind<AccessToken>(async customer =>
             {
-                accessToken = _tokenGenerator.GenerateAccessTokenToCustomer(customer);
-            }
-            else
-            {
-                accessToken = _tokenGenerator.GenerateAccessTokenToOthers(account);
-            }
-            string refreshToken = _tokenGenerator.GenerateRefreshToken();
+                AccessToken accessToken = new AccessToken();
+                if (customer.Account.Role == Constants.USER_ROLE_CUSTOMER)
+                {
+                    accessToken = _tokenGenerator.GenerateAccessTokenToCustomer(customer);
+                }
+                else
+                {
+                    accessToken = _tokenGenerator.GenerateAccessTokenToOthers(account);
+                }
+                string refreshToken = _tokenGenerator.GenerateRefreshToken();
 
-            RefreshToken refreshTokenDTO = new() 
+                RefreshToken refreshTokenDTO = new()
+                {
+                    Token = refreshToken,
+                    AccountId = account.AccountId
+                };
+                var hasDeleted = await _refreshTokenRepository.DeleteAllByAccountIdAsync(account.AccountId);
+                var isCreated = await _refreshTokenRepository.CreateAsync(refreshTokenDTO);
+                if (!hasDeleted || !isCreated) return new MethodResult<AccessToken>.Failure("Cannot delete refresh refresh token or create refresh token", StatusCodes.Status500InternalServerError);
+                return new MethodResult<AccessToken>.Success(accessToken);
+            });
+        public async Task<MethodResult<string>> LogoutAsync(string email) =>
+            await _customerService.GetByEmailAsync(email).Result.Bind<string>(async user =>
             {
-                Token = refreshToken,
-                AccountId = account.AccountId
-            };
-            var hasDeleted = 
+                var result = await _refreshTokenRepository.DeleteAllByAccountIdAsync(user.AccountId);
+                if (!result) return new MethodResult<string>.Failure("Cant logout, please try again!!", StatusCodes.Status500InternalServerError);
 
-        })
-        public Task<MethodResult<string>> LogoutAsync(string email)
-        {
-            throw new NotImplementedException();
-        }
+                return new MethodResult<string>.Success("Logout succesfully!!");
+            });
 
         public async Task<MethodResult<AccessToken>> SigninAsync(LoginRequest request)
         {

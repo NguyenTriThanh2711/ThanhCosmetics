@@ -12,6 +12,6 @@ namespace ThanhCometics.Service.Interfaces
     public interface IRefreshTokenService
     {
         Task<MethodResult<AccessToken>> RefreshTokenAsync(string token);
-        Task<MethodResult<RefreshToken>> GetByCustomerIdAsync(string customerId);
+        Task<MethodResult<RefreshToken>> GetByAccountIdAsync(int id);
     }
 }

@@ -19,7 +19,7 @@ namespace ThanhCometics.Repository.Interface
         bool IsEmailTaken(string email);
         Task<Customer> GetCustomerByIdAsync(string id);
         Task<string> UpdateProfileAsync(Customer customer);
-        Task<Account> GetAccountByEmailAsync(string email);
+        Task<Account?> GetAccountByEmailAsync(string email);
         Task<int> GetNumberCustomerAsync();
         Task<IEnumerable<CustomerViewModel>> GetCustomersAsync();
     }

@@ -3,6 +3,7 @@ using ThanhCometics.Repository.Entities;
 using ThanhCometics.Repository.Interface;
 using ThanhCometics.Repository.Models.AuthenticationModel;
 using Microsoft.EntityFrameworkCore;
+using ThanhCometics.Repository.ViewModels;
 
 namespace ThanhCometics.Repository.Repositories
 {
@@ -57,6 +58,41 @@ namespace ThanhCometics.Repository.Repositories
         public async Task<Customer?> FindByPhoneNumberAsync(string phoneNumber)
         {
             return await Entities.Include(x => x.Account).FirstOrDefaultAsync(u => u.PhoneNumber == phoneNumber);
+        }
+
+        public async Task<Account> GetAccountByEmailAsync(string email)
+        {
+            return await _dbContext.Accounts.Include(x => x.Customer).FirstOrDefaultAsync(a => a.Email == email);
+        }
+
+        public Task<Customer> GetCustomerByIdAsync(string id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<CustomerViewModel>> GetCustomersAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<int> GetNumberCustomerAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool IsEmailTaken(string email)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> UpdateCustomerAsync(Customer customer)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<string> UpdateProfileAsync(Customer customer)
+        {
+            throw new NotImplementedException();
         }
     }
 }

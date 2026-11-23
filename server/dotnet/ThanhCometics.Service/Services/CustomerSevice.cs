@@ -78,9 +78,11 @@ namespace ThanhCometics.Service.Services
             throw new NotImplementedException();
         }
 
-        public Task<MethodResult<ProfileViewModel>> GetProfileAsync(string email)
+        public async Task<MethodResult<ProfileViewModel>> GetProfileAsync(string email)
         {
-            throw new NotImplementedException();
+            var result = await _customerRepository.GetAccountByEmailAsync(email);
+            if (result == null) return new MethodResult<ProfileViewModel>.Failure("Fail to get profile!!",StatusCodes.Status500InternalServerError);
+            return new MethodResult<ProfileViewModel>.Success(_mapper.Map<ProfileViewModel>(result));
         }
 
         public Task<MethodResult<string>> RequestPasswordResetAsync(string email)

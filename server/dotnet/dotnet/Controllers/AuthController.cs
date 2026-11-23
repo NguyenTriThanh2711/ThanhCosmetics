@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
+using ThanhCometics.Common.Helpers;
 using ThanhCometics.Repository.Models.AuthenticationModel;
 using ThanhCometics.Service.Interfaces;
 
@@ -30,6 +33,34 @@ namespace ThanhCometics.API.Controllers
         public async Task<IActionResult> Login(LoginRequest request)
         {
             var result = await _authenticationService.SigninAsync(request);
+            return result.Match(
+                (errorMessage, statusCode) => Problem(detail: errorMessage, statusCode: statusCode),
+                Ok
+            );
+        }
+
+        [HttpPost]
+        [Route("forgot-password")]
+        // hàm này gọi trước sau đó sẽ gọi đến verify change password
+        public async Task<IActionResult> ForgotPassword([FromQuery] string email)
+        {
+            var result = await _customerService.RequestPasswordResetAsync(email);
+            return result.Match(
+                (errorMessage, statusCode) => Problem(detail: errorMessage, statusCode: statusCode),
+                Ok
+            );
+        }
+
+        [HttpGet]
+        [Route("profile")]
+        [Authorize(Roles = Constants.USER_ROLE_CUSTOMER)]
+        public async Task<IActionResult> GetProfile()
+        {
+            //get profile by claims
+            var email = User.FindFirstValue(ClaimTypes.Email);
+            if (email== null) return Unauthorized();
+
+            var result = await _customerService.GetProfileAsync(email);
             return result.Match(
                 (errorMessage, statusCode) => Problem(detail: errorMessage, statusCode: statusCode),
                 Ok
