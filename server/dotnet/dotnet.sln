@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36203.30
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThanhCometics.API", "dotnet\ThanhCometics.API.csproj", "{6E691D69-AB7E-466E-B6CD-B538AF8595A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThanhCometics.API", "ThanhCometics.API\ThanhCometics.API.csproj", "{6E691D69-AB7E-466E-B6CD-B538AF8595A8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThanhCometics.Service", "ThanhCometics.Service\ThanhCometics.Service.csproj", "{3A4978A7-552B-46D5-B145-C84DC0BAC0A0}"
 EndProject

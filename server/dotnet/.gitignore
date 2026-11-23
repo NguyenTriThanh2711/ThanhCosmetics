@@ -1,1 +1,51 @@
-**/.vs/
+## Thư mục build
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ll]og/
+[Ll]ogs/
+
+## Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vsidx
+*.DotSettings.user
+.vscode/
+
+## Rider / JetBrains
+.idea/
+
+## Build & test output
+TestResults/
+*.log
+*.pdb
+*.cache
+project.assets.json
+*.nuget.dgspec.json
+*.nuget.g.props
+*.nuget.g.targets
+
+## NuGet
+*.nupkg
+*.snupkg
+packages/
+
+## File bí mật / cấu hình cá nhân
+appsettings.Development.json
+secrets.json
+*.pfx
+.env
+
+## Postman (bỏ dòng này nếu muốn commit collection)
+.postman/
+postman/
+
+## OS
+.DS_Store
+Thumbs.db

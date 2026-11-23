@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\ThanhCometics.API.props" />
-</Project>
