@@ -1,12 +1,15 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using ThanhCometics.API;
 using ThanhCometics.Repository;
+using ThanhCometics.Repository.Models.Configurations;
 using ThanhCometics.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddService().AddRepository();
+builder.Services.AddService().AddRepository().ConfigureAuthentication();
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -14,6 +17,20 @@ builder.Services.AddSwaggerGen();
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 // regiter db context after create entity
 builder.Services.AddDbContext<ThanhCometicsDBContext>(options =>options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+//đọc section trong appsetting.json rồi gán vào class AuthenticationConfiguration
+builder.Services.Configure<AuthenticationConfiguration>(builder.Configuration.GetSection("AuthenticationConfiguration"));
+
+
+//Cors
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowNextApp", policy =>
+    {
+        policy.WithOrigins("http://localhost:3000", "http://localhost:3000")
+        .AllowAnyHeader()
+        .AllowAnyMethod();
+    });
+});
 
 var assemblies = AppDomain.CurrentDomain.GetAssemblies()
                     .Where(a => !a.IsDynamic)
@@ -31,7 +48,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

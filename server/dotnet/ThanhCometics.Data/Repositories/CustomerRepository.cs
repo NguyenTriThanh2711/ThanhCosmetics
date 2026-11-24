@@ -4,6 +4,7 @@ using ThanhCometics.Repository.Interface;
 using ThanhCometics.Repository.Models.AuthenticationModel;
 using Microsoft.EntityFrameworkCore;
 using ThanhCometics.Repository.ViewModels;
+using ThanhCometics.Repository.Models.CustomerModel;
 
 namespace ThanhCometics.Repository.Repositories
 {
@@ -85,14 +86,30 @@ namespace ThanhCometics.Repository.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<bool> UpdateCustomerAsync(Customer customer)
+        public async Task<bool> UpdateCustomerAsync(Customer customer)
         {
-            throw new NotImplementedException();
+            var customerInDB = await Entities.FirstOrDefaultAsync(x => x.CustomerId == customer.CustomerId);
+            if (customerInDB == null) return await Task.FromResult(false);
+            Entities.Entry(customerInDB).CurrentValues.SetValues(customer);
+            await _unitOfWork.SaveChangesAsync();
+            return await Task.FromResult(true);
         }
 
-        public Task<string> UpdateProfileAsync(Customer customer)
+        public async Task<bool> UpdateProfileAsync(Customer customer, ProfileUpdateRequest request)
         {
-            throw new NotImplementedException();
+            try
+            {
+                customer.FullName = !string.IsNullOrEmpty(request.FullName) ? request.FullName : customer.FullName;
+                customer.PhoneNumber = !string.IsNullOrEmpty(request.PhoneNumber) ? request.PhoneNumber : customer.PhoneNumber;
+                customer.Birthday = request.Birthday.HasValue ? request.Birthday : customer.Birthday;
+                customer.Image = !string.IsNullOrEmpty(request.Image) ? request.Image : customer.Image;
+                return await UpdateCustomerAsync(customer);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                return await Task.FromResult(false);
+            }
         }
     }
 }

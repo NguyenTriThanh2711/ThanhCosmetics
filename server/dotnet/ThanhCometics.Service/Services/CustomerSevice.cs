@@ -48,14 +48,18 @@ namespace ThanhCometics.Service.Services
             throw new NotImplementedException();
         }
 
-        public Task<MethodResult<Account>> GetAccountByEmailAsync(string email)
+        public async Task<MethodResult<Account>> GetAccountByEmailAsync(string email)
         {
-            throw new NotImplementedException();
+            var account = await _customerRepository.GetAccountByEmailAsync(email);
+            if (account == null) return new MethodResult<Account>.Failure("There is no account found!", StatusCodes.Status404NotFound);
+            return new MethodResult<Account>.Success(account);
         }
 
-        public Task<MethodResult<Customer>> GetByEmailAsync(string email)
+        public async Task<MethodResult<Customer>> GetByEmailAsync(string email)
         {
-            throw new NotImplementedException();
+            var customer = await _customerRepository.FindByEmailAsync(email);
+            if (customer == null) return new MethodResult<Customer>.Failure("There is no accout with this email!", StatusCodes.Status404NotFound);
+            return new MethodResult<Customer>.Success(customer);
         }
 
         public Task<MethodResult<Customer>> GetByPhoneNumberAsync(string phoneNumber)
@@ -80,7 +84,7 @@ namespace ThanhCometics.Service.Services
 
         public async Task<MethodResult<ProfileViewModel>> GetProfileAsync(string email)
         {
-            var result = await _customerRepository.GetAccountByEmailAsync(email);
+            var result = await _customerRepository.FindByEmailAsync(email);
             if (result == null) return new MethodResult<ProfileViewModel>.Failure("Fail to get profile!!",StatusCodes.Status500InternalServerError);
             return new MethodResult<ProfileViewModel>.Success(_mapper.Map<ProfileViewModel>(result));
         }
@@ -119,10 +123,13 @@ namespace ThanhCometics.Service.Services
         {
             throw new NotImplementedException();
         }
-
-        public Task<MethodResult<string>> UpdateProfileAsync(Customer cus, ProfileUpdateRequest request)
+        public async Task<MethodResult<string>> RequestUpdateProfileAsync(string email, ProfileUpdateRequest request) 
+            => await GetByEmailAsync(email).Result.Bind(async cus => await UpdateProfileAsync(cus, request));
+        public async Task<MethodResult<string>> UpdateProfileAsync(Customer cus, ProfileUpdateRequest request)
         {
-            throw new NotImplementedException();
+            var result = await _customerRepository.UpdateProfileAsync(cus, request);
+            if(!result) return new MethodResult<string>.Failure("Fail to update profile", StatusCodes.Status500InternalServerError);
+            return new MethodResult<string>.Success("Update profile successfully!!");
         }
 
         public Task<MethodResult<string>> VerifyAccountAsync(string token)

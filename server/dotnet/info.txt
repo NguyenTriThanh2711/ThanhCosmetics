@@ -1,2 +1,3 @@
 + Generic Repository Pattern : một class dùng chung để thao tác DB cho mọi entity (Category, Product, Customer...), khỏi phải viết lại CRUD cho từng bảng. Mình đi từng phần.
 + Result pattern
++ options pattern
