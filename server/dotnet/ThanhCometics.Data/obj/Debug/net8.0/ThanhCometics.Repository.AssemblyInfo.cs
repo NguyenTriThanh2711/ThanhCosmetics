@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ThanhCometics.Repository")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e9cd68b1d710c4650efe551e15f0f4f8db3e131")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c1527c56e918ee791f7a6b6814e16cfafa23cac")]
 [assembly: System.Reflection.AssemblyProductAttribute("ThanhCometics.Repository")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ThanhCometics.Repository")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

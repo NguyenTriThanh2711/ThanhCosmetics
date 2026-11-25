@@ -18,6 +18,7 @@ namespace ThanhCometics.Service
             service.AddTransient<ITokenGenerator, TokenGenerator>();
             service.AddTransient<ITokenValidator, TokenValidator>();
             service.AddTransient<IRefreshTokenService, RefreshTokenService>();
+            service.AddTransient<ISkinTestService, SkinTestService>();
             return service;
         }
     }

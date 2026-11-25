@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ThanhCometics.Common")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0decf5685d47501b368e256df0f388aeb369cab8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c1527c56e918ee791f7a6b6814e16cfafa23cac")]
 [assembly: System.Reflection.AssemblyProductAttribute("ThanhCometics.Common")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ThanhCometics.Common")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

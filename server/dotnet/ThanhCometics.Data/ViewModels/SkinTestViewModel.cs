@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ThanhCometics.Repository.Entities;
 
 namespace ThanhCometics.Repository.ViewModels
 {
@@ -26,7 +27,7 @@ namespace ThanhCometics.Repository.ViewModels
     {
         public int SkinTypeAnswerId { get; set; }
         public string? Description { get; set; }
-        public int SkinTypeId { get; set; }
+        public List<SkinTypeAnswerSkinType> SkinTypeAnswerSkinTypes { get; set; } = new List<SkinTypeAnswerSkinType>();
     }
     public class SkinTestResultViewModel
     {

@@ -11,7 +11,7 @@ public partial class SkinTypeAnswer
 
     public int SkinTypeQuestionId { get; set; }
 
-    public int SkinTypeId { get; set; }
+    public virtual ICollection<SkinTypeAnswerSkinType> SkinTypeAnswerSkinTypes { get; set; } = null!;
 
     public virtual SkinType SkinType { get; set; } = null!;
 

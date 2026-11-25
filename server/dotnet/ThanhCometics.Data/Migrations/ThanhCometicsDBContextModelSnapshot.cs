@@ -732,6 +732,21 @@ namespace ThanhCometics.Repository.Migrations
                     b.ToTable("SkinTypeAnswers");
                 });
 
+            modelBuilder.Entity("ThanhCometics.Repository.Entities.SkinTypeAnswerSkinType", b =>
+                {
+                    b.Property<int>("SkinTypeAnswerId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SkinTypeId")
+                        .HasColumnType("int");
+
+                    b.HasKey("SkinTypeAnswerId", "SkinTypeId");
+
+                    b.HasIndex("SkinTypeId");
+
+                    b.ToTable("SkinTypeAnswerSkinTypes", (string)null);
+                });
+
             modelBuilder.Entity("ThanhCometics.Repository.Entities.SkinTypeQuestion", b =>
                 {
                     b.Property<int>("SkinTypeQuestionId")
@@ -1113,6 +1128,25 @@ namespace ThanhCometics.Repository.Migrations
                     b.Navigation("SkinTypeQuestion");
                 });
 
+            modelBuilder.Entity("ThanhCometics.Repository.Entities.SkinTypeAnswerSkinType", b =>
+                {
+                    b.HasOne("ThanhCometics.Repository.Entities.SkinTypeAnswer", "SkinTypeAnswer")
+                        .WithMany("SkinTypeAnswerSkinTypes")
+                        .HasForeignKey("SkinTypeAnswerId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("ThanhCometics.Repository.Entities.SkinType", "SkinType")
+                        .WithMany("SkinTypeAnswerSkinTypes")
+                        .HasForeignKey("SkinTypeId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("SkinType");
+
+                    b.Navigation("SkinTypeAnswer");
+                });
+
             modelBuilder.Entity("ThanhCometics.Repository.Entities.SkinTypeQuestion", b =>
                 {
                     b.HasOne("ThanhCometics.Repository.Entities.SkinTest", "SkinTest")
@@ -1229,7 +1263,14 @@ namespace ThanhCometics.Repository.Migrations
 
                     b.Navigation("Routines");
 
+                    b.Navigation("SkinTypeAnswerSkinTypes");
+
                     b.Navigation("SkinTypeAnswers");
+                });
+
+            modelBuilder.Entity("ThanhCometics.Repository.Entities.SkinTypeAnswer", b =>
+                {
+                    b.Navigation("SkinTypeAnswerSkinTypes");
                 });
 
             modelBuilder.Entity("ThanhCometics.Repository.Entities.SkinTypeQuestion", b =>

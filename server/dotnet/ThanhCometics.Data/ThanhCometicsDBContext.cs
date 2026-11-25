@@ -35,6 +35,7 @@ namespace ThanhCometics.Repository
         public virtual DbSet<SkinType> SkinTypes { get; set; } = null!;
         public virtual DbSet<SkinTypeAnswer> SkinTypeAnswers { get; set; } = null!;
         public virtual DbSet<SkinTypeQuestion> SkinTypeQuestions { get; set; } = null!;
+        public virtual DbSet<SkinTypeAnswerSkinType> SkinTypeAnswerSkinTypes { get; set; } = null!;
         public virtual DbSet<TestTableThanh> TestTableThanhs { get; set; } = null!;
         public virtual DbSet<Transaction> Transactions { get; set; } = null!;
         public virtual DbSet<Voucher> Vouchers { get; set; } = null!;
@@ -49,7 +50,24 @@ namespace ThanhCometics.Repository
             {
                 relationship.DeleteBehavior = DeleteBehavior.Restrict;
             }
+            //24/11/2026 -- begin
+            modelBuilder.Entity<SkinTypeAnswerSkinType>(entity =>
+            {
+                entity.ToTable("SkinTypeAnswerSkinTypes");
 
+                entity.HasKey(x => new { x.SkinTypeAnswerId, x.SkinTypeId });
+
+                entity.HasOne(x => x.SkinTypeAnswer)
+                    .WithMany(x => x.SkinTypeAnswerSkinTypes)
+                    .HasForeignKey(x => x.SkinTypeAnswerId)
+                    .OnDelete(DeleteBehavior.Restrict);
+
+                entity.HasOne(x => x.SkinType)
+                    .WithMany(x => x.SkinTypeAnswerSkinTypes)
+                    .HasForeignKey(x => x.SkinTypeId)
+                    .OnDelete(DeleteBehavior.Restrict);
+            });
+            //24/11/2026 -- End
             // (Tuỳ chọn) Cấu hình độ dài hoặc kiểu dữ liệu cụ thể nếu cần, 
             // ví dụ với OrderCode, PhoneNumber, v.v.
             modelBuilder.Entity<Order>()

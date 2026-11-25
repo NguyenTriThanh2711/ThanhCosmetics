@@ -18,4 +18,6 @@ public partial class SkinType
     public virtual ICollection<Routine> Routines { get; set; } = new List<Routine>();
 
     public virtual ICollection<SkinTypeAnswer> SkinTypeAnswers { get; set; } = new List<SkinTypeAnswer>();
+
+    public virtual ICollection<SkinTypeAnswerSkinType> SkinTypeAnswerSkinTypes { get; set; } = new List<SkinTypeAnswerSkinType>();
 }

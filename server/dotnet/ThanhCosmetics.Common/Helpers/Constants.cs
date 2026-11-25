@@ -24,5 +24,8 @@ namespace ThanhCometics.Common.Helpers
         public const string ORDER_STATUS_CANCEL = "Cancel";
         public const string ORDER_STATUS_RETURNED = "Returned";
         public const string ORDER_STATUS_DENIED = "Denied";
+
+        public const bool SKIN_TEST_ACTIVE = true;
+        public const bool SKIN_TEST_DEACTIVE = false;
     }
 }

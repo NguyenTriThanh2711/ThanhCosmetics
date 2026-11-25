@@ -27,7 +27,11 @@ namespace ThanhCometics.Repository.Mapper
             
             CreateMap<SkinTypeAnswerRequest, SkinTypeAnswer>()
                 .ForMember(dest => dest.Description, opt => opt.MapFrom(src => src.Description))
-                .ForMember(dest => dest.SkinTypeId, opt => opt.MapFrom(src => src.SkinTypeId));
+                .ForMember(dest => dest.SkinTypeAnswerSkinTypes, opt => opt.MapFrom(src => 
+                    src.SkinTypeIds.Select(id => new SkinTypeAnswerSkinType
+                    {
+                        SkinTypeId = id
+                    })));
             CreateMap<SkinTestUpdateRequest, SkinTest>()
                 .ForMember(dest => dest.SkinTestId, opt => opt.MapFrom(src => src.SkinTestId))
                 .ForMember(dest => dest.SkinTestName, opt => opt.MapFrom(src => src.SkinTestName))
@@ -44,7 +48,12 @@ namespace ThanhCometics.Repository.Mapper
             CreateMap<SkinTypeAnswerUpdateRequest, SkinTypeAnswer>()
                 .ForMember(dest => dest.SkinTypeAnswerId, opt => opt.MapFrom(src => src.SkinTypeAnswerId))
                 .ForMember(dest => dest.Description, opt => opt.MapFrom(src => src.Description))
-                .ForMember(dest => dest.SkinTypeId, opt => opt.MapFrom(src => src.SkinTypeId));
+                .ForMember(dest => dest.SkinTypeAnswerSkinTypes, opt => opt.MapFrom(src =>
+                    src.SkinTypeIds.Select(id => new SkinTypeAnswerSkinType 
+                    {
+                        SkinTypeId = id
+                    }
+                )));
 
 
             CreateMap<SkinTest, SkinTestViewModel>()
