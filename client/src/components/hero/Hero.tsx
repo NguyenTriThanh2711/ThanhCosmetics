@@ -7,15 +7,13 @@ import { useNavigate } from "react-router-dom";
 
 const Hero: React.FC = () => {
   const navigate = useNavigate();
-  
-    const handleClick = () => {
-      navigate("/take-quiz");
-    };
+  const handleClick = () => navigate("/take-quiz");
   return (
     <div className="hero-container">
       <Carousel
         additionalTransfrom={0}
         arrows
+        autoPlay
         autoPlaySpeed={3000}
         centerMode={false}
         className=""
@@ -58,13 +56,12 @@ const Hero: React.FC = () => {
         rewindWithAnimation={false}
         rtl={false}
         shouldResetAutoplay
-        showDots
         sliderClass=""
         slidesToSlide={1}
         swipeable
       >
         <div className="hero-item">
-          <img src="/hero-banner-1.png" alt="hero-banner" />
+          <img src="hero-banner-1.png" alt="hero-banner" />
 
           <div className="hero-content">
             <p className="title">Unlock Your True Beauty</p>

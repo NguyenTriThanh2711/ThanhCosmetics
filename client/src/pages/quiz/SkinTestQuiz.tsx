@@ -18,15 +18,12 @@ import {
 import { useStore } from "../../store";
 import "./SkinTestQuiz.scss";
 import { useNavigate } from "react-router-dom";
-import { getAllSkinTests } from "../../store/skinTest.api";
 
 const SkinTestQuiz = () => {
   const navigate = useNavigate();
   const skinRef = useRef<HTMLDivElement>(null);
-  const [loading, setLoading] = useState(true);
-  const fetchQuestionsSkinTest = useStore(
-    (state) => state.fetchQuestionsSkinTest
-  );
+  const loading = useStore((state) => state.loading.isLoading);
+  const fetchActiveSkinTest = useStore((state) => state.fetchActiveSkinTest);
   const determineSkinType = useStore((state) => state.determineSkinType);
   const [step, setStep] = useState(1);
   const quizQuestions = useStore((state) => state.routine.skinTypeQuestions);
@@ -39,26 +36,17 @@ const SkinTestQuiz = () => {
   };
 
   useEffect(() => {
-    const loadQuestions = async () => {
-      setLoading(true);
-      let skinTestIdActive = 1;
-      const skinTestsData = await getAllSkinTests();
-      if (skinTestsData && skinTestsData?.$values?.length > 0) {
-        skinTestIdActive = skinTestsData?.$values?.find(
-          (item) => item.status === true
-        )?.skinTestId ?? 1;
-      }
-      await fetchQuestionsSkinTest(skinTestIdActive);
-      setLoading(false);
-    };
+    const loadQuestions = () => fetchActiveSkinTest();
     loadQuestions();
   }, []);
 
-  const validationSchema = Yup.object(
-    (quizQuestions || []).reduce((schema:any, _:any, index:any) => {
+  const validationSchema = Yup.object().shape(
+    (quizQuestions ?? []).reduce((schema: Record<string, Yup.AnySchema>, _: unknown, index: number) => {
       schema[`q${index}`] = Yup.array()
+        .of(Yup.string().required())
         .min(1, "Please select at least one option")
         .required("This question is required");
+
       return schema;
     }, {})
   );
@@ -96,14 +84,16 @@ const SkinTestQuiz = () => {
         style={{ backgroundColor: step === 3 ? "white" : "" }}
         ref={skinRef}
       >
-        {loading ? (
+        {(totalQuestions == 0 && !loading) ? (
           <Box
             display="flex"
             justifyContent="center"
             alignItems="center"
             height="80vh"
           >
-            <CircularProgress />
+            {/* <Typography variant="h6" color="textSecondary">
+              No questions available.
+            </Typography> */}
           </Box>
         ) : (
           step === 1 && (
@@ -115,7 +105,7 @@ const SkinTestQuiz = () => {
 
                 <Box mt={2} mb={3}>
                   <Typography variant="body1" align="center">
-                    Progress: {answeredQuestions} / {quizQuestions.length}
+                    Progress: {answeredQuestions} / {quizQuestions?.length}
                   </Typography>
                   <LinearProgress
                     variant="determinate"
@@ -125,7 +115,7 @@ const SkinTestQuiz = () => {
                 </Box>
 
                 <form onSubmit={formik.handleSubmit}>
-                  {quizQuestions.map((q:any, index:any) => (
+                  {quizQuestions?.map((q:any, index:any) => (
                     <Card key={index} sx={{ mb: 2, boxShadow: 3 }}>
                       <CardContent>
                         <Typography variant="h6" gutterBottom>
@@ -146,7 +136,7 @@ const SkinTestQuiz = () => {
                                   <Checkbox
                                     checked={formik.values[
                                       `q${index}`
-                                    ].includes(key)}
+                                    ]?.includes(key)}
                                     onChange={(e) => {
                                       const selectedOptions = [
                                         ...formik.values[`q${index}`],
@@ -170,10 +160,12 @@ const SkinTestQuiz = () => {
                               />
                             ))
                           )}
-                          {/* <FormHelperText>
+                          <FormHelperText>
                             {formik.touched[`q${index}`] &&
-                              formik.errors[`q${index}`]}
-                          </FormHelperText> */}
+                              typeof formik.errors[`q${index}`] === "string"
+                              ? formik.errors[`q${index}`]
+                              : ""}
+                          </FormHelperText>
                         </FormControl>
                       </CardContent>
                     </Card>

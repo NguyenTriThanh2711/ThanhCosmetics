@@ -1,7 +1,8 @@
 import axios,  { type AxiosInstance } from "axios";
 
- const apiBaseUrl: string =
-  "https://beautysc-api.purpleforest-f01817f2.southeastasia.azurecontainerapps.io/api";
+//  const apiBaseUrl: string =
+//   "https://beautysc-api.purpleforest-f01817f2.southeastasia.azurecontainerapps.io/api";
+const apiBaseUrl : string = "https://localhost:7202/api";
 
 export const apiEndpoints = {
   SkinTest: "SkinTest",
@@ -14,8 +15,8 @@ export const apiEndpoints = {
   Voucher: "Voucher",
   Feedback: "Feedback",
   Product: "Product",
-  Authentication: "Authentication",
-  blogs: "blogs",
+  Authentication: "Auth",
+  Blogs: "Blogs",
   Brand: "Brand",
   Function: "Function",
   Ingredient: "Ingredient",

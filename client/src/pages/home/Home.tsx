@@ -5,7 +5,7 @@ import ProductCategories from "../../components/categories/product-categories/Pr
 import Advertisement from "../../components/advertisement/Advertisement";
 import OurBestSeller from "../../components/our-best-seller/OurBestSeller";
 import NewIn from "../../components/new-in/NewIn";
-
+import "react-multi-carousel/lib/styles.css";
 import "./Home.scss";
 import { useStore } from "../../store";
 // import HomeBlog from "../../components/our-blog/HomeBlog";

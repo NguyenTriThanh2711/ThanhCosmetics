@@ -67,9 +67,11 @@ namespace ThanhCometics.Service.Services
             throw new NotImplementedException();
         }
 
-        public Task<MethodResult<Customer>> GetCustomerByIdAsync(int id)
+        public async Task<MethodResult<Customer>> GetCustomerByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            var customer = await _customerRepository.GetCustomerByIdAsync(id);
+            if (customer == null) return new MethodResult<Customer>.Failure("Cannot find out the customer", StatusCodes.Status404NotFound);
+            return new MethodResult<Customer>.Success(customer);
         }
 
         public Task<MethodResult<IEnumerable<CustomerViewModel>>> GetCustomersAsync()

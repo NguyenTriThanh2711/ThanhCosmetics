@@ -1,0 +1,6 @@
+$kind: collection
+auth:
+  - id: 200d28f5-1e81-4de0-af14-02b2d452e22d
+    type: bearer
+    name: Bearer Token
+order: 3000

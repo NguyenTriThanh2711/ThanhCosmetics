@@ -18,7 +18,7 @@ namespace ThanhCometics.Repository.Interface
         Task<Customer?> FindByPhoneNumberAsync(string phoneNumber);
         Task<bool> UpdateCustomerAsync(Customer customer);
         bool IsEmailTaken(string email);
-        Task<Customer> GetCustomerByIdAsync(string id);
+        Task<Customer?> GetCustomerByIdAsync(int id);
         Task<bool> UpdateProfileAsync(Customer customer, ProfileUpdateRequest request);
         Task<Account?> GetAccountByEmailAsync(string email);
         Task<int> GetNumberCustomerAsync();

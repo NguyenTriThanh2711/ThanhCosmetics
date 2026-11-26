@@ -4,7 +4,7 @@
 
     img {
       width: 100%;
-      max-height: 70vh;
+      max-height: 87vh;
       object-fit: cover;
     }
 
@@ -41,7 +41,25 @@
       background: rgba(0, 0, 0, 0.7);
     }
   }
+  .react-multiple-carousel__arrow--left,
+  .react-multiple-carousel__arrow--right {
+    height: 100%;
+    width: 56px;
+    border-radius: 0;
+    background: transparent;
 
+    &:hover {
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    &::before {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+
+  .react-multiple-carousel__arrow--left { left: 0; }
+  .react-multiple-carousel__arrow--right { right: 0; }
   .react-multi-carousel-dot-list {
     bottom: 24px;
 

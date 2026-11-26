@@ -47,14 +47,14 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="section-3">
-          {/* <h3>Keep In Touch With Beautya</h3>
+          <h3>Keep In Touch With Beautya</h3>
 
           <p>
             Join the Beautya newsletter and be first to hear about news, offers
             and skincare advice
-          </p> */}
+          </p>
 
-          {/* <div className="subscribe">
+          <div className="subscribe">
             <TextField
               id="email-address"
               label="Email Address"
@@ -75,12 +75,12 @@ const Footer: React.FC = () => {
             >
               Subscribe
             </Button>
-          </div> */}
+          </div> 
 
-          {/* <FormControlLabel
+           <FormControlLabel
             control={<Checkbox defaultChecked />}
             label="By submitting your email, you agree to receive advertising emails from Beautya. Please review our Privacy Policy, which includes our Financial Incentive Notice for CA residents."
-          /> */}
+          />
         </div>
       </div>
 
@@ -107,7 +107,7 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="copyright">
-        <p>© 2026 BeautySC. All Rights Reserved.</p>
+        <p>© 2026 ThanhComestics. All Rights Reserved.</p>
 
         <div>
           <p>Terms & Conditions</p>

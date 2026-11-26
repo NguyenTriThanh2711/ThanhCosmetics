@@ -1,0 +1,22 @@
+$kind: http-request
+name: Customer/Profile
+url: "{{host}}/api/Customer/update-profile"
+method: PATCH
+body:
+  type: formdata
+  content:
+    - type: text
+      key: FullName
+      value: thanh
+      description: ""
+      disabled: false
+    - type: text
+      key: PhoneNumber
+      value: "0899333"
+      description: ""
+      disabled: false
+auth:
+  type: bearer
+  credentials:
+    token: "{{token}}"
+order: 3916

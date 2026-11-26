@@ -1,0 +1,7 @@
+# Use this workspace to collaborate
+workspace:
+  id: 6d687efc-8129-4ea5-88db-c53907e800e6
+
+localResources:
+  specs:
+    - ../server/dotnet/dotnet/obj/Debug/net8.0/EndpointInfo/ThanhCometics.API.json

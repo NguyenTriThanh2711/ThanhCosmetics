@@ -24,11 +24,12 @@ builder.Services.Configure<AuthenticationConfiguration>(builder.Configuration.Ge
 //Cors
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowNextApp", policy =>
+    options.AddPolicy("AllowFrontEnd", policy =>
     {
-        policy.WithOrigins("http://localhost:3000", "http://localhost:3000")
+        policy.WithOrigins("https://localhost:5173", "http://localhost:5173")
         .AllowAnyHeader()
-        .AllowAnyMethod();
+        .AllowAnyMethod()
+        .AllowCredentials();
     });
 });
 
@@ -48,6 +49,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseCors("AllowFrontEnd");
 app.UseAuthentication();
 app.UseAuthorization();
 

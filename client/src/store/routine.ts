@@ -10,7 +10,7 @@ export interface RoutineState {
 
 export interface RoutineActions {
   determineSkinType: (item: any) => void;
-  fetchQuestionsSkinTest: (id: any) => void;
+  fetchActiveSkinTest: () => void;
   fetchRoutine: (skinTypeId: number) => void;
   setStep: (step: number) => void;
 }
@@ -59,28 +59,20 @@ export function routineActions(set: StoreSet, get: StoreGet): RoutineActions {
         });
       }
     },
-    fetchQuestionsSkinTest: async (id: number) => {
+    fetchActiveSkinTest: async () => {
       set((state) => {
         state.loading.isLoading = true;
       });
       try {
-        const response = await apiClient.get(
-          `${apiEndpoints.SkinTest}/get-skin-test?skinTestId=${id}`
-        );
+        const response = await apiClient.get(`${apiEndpoints.SkinTest}/get-active-skin-test`);
+        console.log("response fetchActiveSkinTest", response);
         set((state) => {
-          if (response.data) {
-            state.routine.skinTypeQuestions =
-              response?.data?.skinTypeQuestions.$values.map((item: any) => {
-                return {
-                  question: item.description,
-                  options: item.skinTypeAnswers.$values.map((answer: any) => {
-                    return {
-                      [answer.skinTypeAnswerId]: answer.description,
-                    };
-                  }),
-                };
-              });
-          }
+          state.routine.skinTypeQuestions = response.data.skinTypeQuestions.map((question: any) => ({
+            question: question.description,
+            options: (question.skinTypeAnswers ?? []).map((answer: any) => ({
+              [answer.skinTypeAnswerId]: answer.description,
+            })),
+          }));
         });
       } catch (error: any) {
         set((state) => {

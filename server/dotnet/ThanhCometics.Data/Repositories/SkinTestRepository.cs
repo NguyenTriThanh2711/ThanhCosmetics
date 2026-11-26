@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using ThanhCometics.Common.Helpers;
 using ThanhCometics.Repository.Entities;
 using ThanhCometics.Repository.Interfaces;
+using ThanhCometics.Repository.Models.SkinTestModel;
 using ThanhCometics.Repository.ViewModels;
 
 namespace ThanhCometics.Repository.Repositories
@@ -25,7 +26,18 @@ namespace ThanhCometics.Repository.Repositories
         } 
         public async Task<SkinTest?> GetActiveSkinTestAsync()
         {
-            return  await Entities.Include(x => x.SkinTypeQuestions).ThenInclude(x => x.SkinTypeAnswers).FirstOrDefaultAsync(x => x.Status == Constants.SKIN_TEST_ACTIVE);
+            return  await Entities.Include(x => x.SkinTypeQuestions)
+                .ThenInclude(x => x.SkinTypeAnswers)
+                .FirstOrDefaultAsync(x => x.Status == Constants.SKIN_TEST_ACTIVE);
+        }
+        
+        public Task<List<SkinTypeAnswer>> GetSkinTypeAnswersAsync(ListUserAnswerModel list)
+        {
+            return _dbContext.SkinTypeAnswers
+                .Where(x => list.ListUserAnswer.Contains(x.SkinTypeAnswerId))
+                .Include(x => x.SkinTypeAnswerSkinTypes)
+                .ThenInclude(x => x.SkinType)
+                .ToListAsync();
         }
     }
 }

@@ -213,7 +213,7 @@ export function profileActions(set: StoreSet, get: StoreGet): ProfileActions {
           body
         );
         set((state) => {
-          state.profile.error = undefined;
+          state.profile.error = 'false';
           state.notification.data.push({
             status: "SUCCESS",
             content:

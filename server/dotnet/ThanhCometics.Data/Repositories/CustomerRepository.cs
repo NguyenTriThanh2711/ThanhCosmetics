@@ -66,10 +66,8 @@ namespace ThanhCometics.Repository.Repositories
             return await _dbContext.Accounts.Include(x => x.Customer).FirstOrDefaultAsync(a => a.Email == email);
         }
 
-        public Task<Customer> GetCustomerByIdAsync(string id)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<Customer?> GetCustomerByIdAsync(int id) => await Entities.Include(x => x.Account).FirstOrDefaultAsync(c => c.AccountId == id);
+   
 
         public Task<IEnumerable<CustomerViewModel>> GetCustomersAsync()
         {

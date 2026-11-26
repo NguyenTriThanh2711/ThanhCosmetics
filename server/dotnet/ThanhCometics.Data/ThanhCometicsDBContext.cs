@@ -68,6 +68,17 @@ namespace ThanhCometics.Repository
                     .OnDelete(DeleteBehavior.Restrict);
             });
             //24/11/2026 -- End
+            //26/11/2026 -- Begin // fix lỗi truy vấn đến trường skinTypeId trong bảng skinAnswers nhưng ko có
+            /*modelBuilder.Entity<SkinTypeAnswer>(entity =>
+            {
+                entity.Ignore(x => x.SkinType);
+
+                entity.HasOne(x => x.SkinTypeQuestion)
+                    .WithMany(x => x.SkinTypeAnswers)
+                    .HasForeignKey(x => x.SkinTypeQuestionId)
+                    .OnDelete(DeleteBehavior.Restrict);
+            });*/
+            //26/11/2026 -- End 
             // (Tuỳ chọn) Cấu hình độ dài hoặc kiểu dữ liệu cụ thể nếu cần, 
             // ví dụ với OrderCode, PhoneNumber, v.v.
             modelBuilder.Entity<Order>()
