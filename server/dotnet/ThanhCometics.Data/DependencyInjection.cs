@@ -19,6 +19,7 @@ namespace ThanhCometics.Repository
             service.AddScoped<IUnitOfWork, UnitOfWork>();
             service.AddTransient(typeof(IRepository<>), typeof(Repository<>));
             service.AddTransient<ISkinTestRepository, SkinTestRepository>();
+            service.AddTransient<IRoutineRepository, RoutineRepository>();
             return service;
         }
     }

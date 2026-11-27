@@ -11,5 +11,6 @@ namespace ThanhCometics.Service.Interfaces
     public interface IRoutineService
     {
         Task<MethodResult<RoutineViewModel>> GetRoutineAsync(int skinTypeId);
+        Task<MethodResult<IEnumerable<RoutineGetAllViewModel>>> GetAllRoutineAsync();
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ThanhCometics.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7be3266e9b925d5988d5c7d37be478e15d380a7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4d62de80e96fd3564a881e8fc691a745248b06a")]
 [assembly: System.Reflection.AssemblyProductAttribute("ThanhCometics.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ThanhCometics.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

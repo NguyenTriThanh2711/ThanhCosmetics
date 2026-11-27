@@ -717,15 +717,10 @@ namespace ThanhCometics.Repository.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("SkinTypeId")
-                        .HasColumnType("int");
-
                     b.Property<int>("SkinTypeQuestionId")
                         .HasColumnType("int");
 
                     b.HasKey("SkinTypeAnswerId");
-
-                    b.HasIndex("SkinTypeId");
 
                     b.HasIndex("SkinTypeQuestionId");
 
@@ -1111,19 +1106,11 @@ namespace ThanhCometics.Repository.Migrations
 
             modelBuilder.Entity("ThanhCometics.Repository.Entities.SkinTypeAnswer", b =>
                 {
-                    b.HasOne("ThanhCometics.Repository.Entities.SkinType", "SkinType")
-                        .WithMany("SkinTypeAnswers")
-                        .HasForeignKey("SkinTypeId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
                     b.HasOne("ThanhCometics.Repository.Entities.SkinTypeQuestion", "SkinTypeQuestion")
                         .WithMany("SkinTypeAnswers")
                         .HasForeignKey("SkinTypeQuestionId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
-
-                    b.Navigation("SkinType");
 
                     b.Navigation("SkinTypeQuestion");
                 });
@@ -1264,8 +1251,6 @@ namespace ThanhCometics.Repository.Migrations
                     b.Navigation("Routines");
 
                     b.Navigation("SkinTypeAnswerSkinTypes");
-
-                    b.Navigation("SkinTypeAnswers");
                 });
 
             modelBuilder.Entity("ThanhCometics.Repository.Entities.SkinTypeAnswer", b =>

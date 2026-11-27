@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ThanhCometics.Common.Helpers;
 using ThanhCometics.Repository;
+using ThanhCometics.Repository.Interfaces;
 using ThanhCometics.Repository.ViewModels;
 using ThanhCometics.Service.Interfaces;
 
@@ -24,9 +26,18 @@ namespace ThanhCometics.Service.Services
             _routineRepository = routineRepository;
         }
 
-        public Task<MethodResult<RoutineViewModel>> GetRoutineAsync(int skinTypeId)
+        public async Task<MethodResult<RoutineViewModel>> GetRoutineAsync(int skinTypeId)
         {
-            throw new NotImplementedException();
+            var rountine = await _routineRepository.GetRoutineBySkinTypeIdAsync(skinTypeId);
+            var mappedRoutine = _mapper.Map<RoutineViewModel>(rountine);
+            if(mappedRoutine == null) return new MethodResult<RoutineViewModel>.Failure("Something wrong in detected routine", StatusCodes.Status404NotFound);
+            return new MethodResult<RoutineViewModel>.Success(mappedRoutine);
+
+        }
+        public async Task<MethodResult<IEnumerable<RoutineGetAllViewModel>>> GetAllRoutineAsync()
+        {
+            var result = await _routineRepository.GetAllRoutineAsync();
+            return new MethodResult<IEnumerable<RoutineGetAllViewModel>>.Success(result);
         }
     }
 }

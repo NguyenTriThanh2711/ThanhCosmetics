@@ -27,5 +27,7 @@ namespace ThanhCometics.Common.Helpers
 
         public const bool SKIN_TEST_ACTIVE = true;
         public const bool SKIN_TEST_DEACTIVE = false;
+        public const bool ROUTINE_ACTIVE = true;
+        public const bool ROUTINE_DEACTIVE = false;
     }
 }
