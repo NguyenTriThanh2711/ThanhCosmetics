@@ -5,11 +5,23 @@
 namespace ThanhCometics.Repository.Migrations
 {
     /// <inheritdoc />
-    public partial class AnswerSupportsMultipleSkinTypes : Migration
+    public partial class SyncSkinTypeAnswerSnapshot : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropForeignKey(
+                name: "FK_SkinTypeAnswers_SkinTypes_SkinTypeId",
+                table: "SkinTypeAnswers");
+
+            migrationBuilder.DropIndex(
+                name: "IX_SkinTypeAnswers_SkinTypeId",
+                table: "SkinTypeAnswers");
+
+            migrationBuilder.DropColumn(
+                name: "SkinTypeId",
+                table: "SkinTypeAnswers");
+
             migrationBuilder.CreateTable(
                 name: "SkinTypeAnswerSkinTypes",
                 columns: table => new
@@ -38,26 +50,6 @@ namespace ThanhCometics.Repository.Migrations
                 name: "IX_SkinTypeAnswerSkinTypes_SkinTypeId",
                 table: "SkinTypeAnswerSkinTypes",
                 column: "SkinTypeId");
-
-            //này để chuyển quan hệ cũ sang bảng liên kết mới 
-            migrationBuilder.Sql("""
-                INSERT INTO SkinTypeAnswerSkinTypes (SkinTypeAnswerId, SkinTypeId)
-                SELECT SkinTypeAnswerId, SkinTypeId
-                FROM SkinTypeAnswers;
-                """);
-
-            // Gỡ quan hệ cũ rồi bỏ cột SkinTypeId
-            migrationBuilder.DropForeignKey(
-                name: "FK_SkinTypeAnswers_SkinTypes_SkinTypeId",
-                table: "SkinTypeAnswers");
-
-            migrationBuilder.DropIndex(
-                name: "IX_SkinTypeAnswers_SkinTypeId",
-                table: "SkinTypeAnswers");
-
-            migrationBuilder.DropColumn(
-                name: "SkinTypeId",
-                table: "SkinTypeAnswers");
         }
 
         /// <inheritdoc />
@@ -65,6 +57,26 @@ namespace ThanhCometics.Repository.Migrations
         {
             migrationBuilder.DropTable(
                 name: "SkinTypeAnswerSkinTypes");
+
+            migrationBuilder.AddColumn<int>(
+                name: "SkinTypeId",
+                table: "SkinTypeAnswers",
+                type: "int",
+                nullable: false,
+                defaultValue: 0);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_SkinTypeAnswers_SkinTypeId",
+                table: "SkinTypeAnswers",
+                column: "SkinTypeId");
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_SkinTypeAnswers_SkinTypes_SkinTypeId",
+                table: "SkinTypeAnswers",
+                column: "SkinTypeId",
+                principalTable: "SkinTypes",
+                principalColumn: "SkinTypeId",
+                onDelete: ReferentialAction.Restrict);
         }
     }
 }
